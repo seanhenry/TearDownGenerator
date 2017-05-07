@@ -100,6 +100,8 @@ public class TearDownIntentionTests extends PlatformTestCase {
   private void runInvokeTests() throws Exception {
     String[] fileNames = {
       "SimpleTearDown",
+      "ReplaceTearDown",
+      "ReplaceTearDownNoSuper",
     };
 
     for (String fileName : fileNames) {

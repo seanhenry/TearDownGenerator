@@ -22,21 +22,18 @@ import com.intellij.openapi.components.ProjectComponent;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.project.Project;
 import com.intellij.psi.PsiElement;
-import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.PsiNamedElement;
 import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.util.IncorrectOperationException;
 import com.jetbrains.swift.psi.*;
-import com.jetbrains.swift.psi.types.SwiftOptionalType;
-import com.jetbrains.swift.psi.types.SwiftTypeVisitor;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class TearDownIntention extends PsiElementBaseIntentionAction implements IntentionAction, ProjectComponent {
 
@@ -45,51 +42,41 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   private SwiftPsiElementFactory elementFactory;
 
   @Override
+  public boolean isAvailable(@NotNull Project project, Editor editor, @NotNull PsiElement element) {
+
+    SwiftClassDeclaration classDeclaration = PsiTreeUtil.getParentOfType(element, SwiftClassDeclaration.class);
+    return MySwiftPsiUtil.isSubclassOf(classDeclaration, "XCTestCase");
+  }
+
+  @Override
   public void invoke(@NotNull Project project, Editor editor, @NotNull PsiElement element) throws IncorrectOperationException {
 
     elementFactory = SwiftPsiElementFactory.getInstance(element);
     classDeclaration = PsiTreeUtil.getParentOfType(element, SwiftClassDeclaration.class);
     assert classDeclaration != null;
-    createTearDownMethod(getWritableVariableNames());
+    List<String> writableNames = getWritableVariableNames();
+    SwiftFunctionDeclaration tearDownMethod = getTearDownMethod();
+    if (tearDownMethod != null) {
+      replaceTearDownMethod(tearDownMethod, writableNames);
+    } else {
+      createTearDownMethod(writableNames);
+    }
   }
 
-  public class WritableVariableVistor extends PsiElementVisitor {
-
-    private List<SwiftVariableDeclaration> variables = new ArrayList<>();
-
-    @Override
-    public void visitElement(PsiElement element) {
-      super.visitElement(element);
-      if (element instanceof SwiftVariableDeclaration) {
-        SwiftVariableDeclaration variable = (SwiftVariableDeclaration)element;
-        SwiftOptionalTypeElement optional = PsiTreeUtil.findChildOfType(element, SwiftOptionalTypeElement.class);
-        if (optional != null) {
-          variables.add(variable);
+  private SwiftFunctionDeclaration getTearDownMethod() {
+    for (PsiElement child : classDeclaration.getChildren()) {
+      if (child instanceof SwiftFunctionDeclaration) {
+        SwiftFunctionDeclaration function = (SwiftFunctionDeclaration)child;
+        // TODO: Check for class edge case
+        if ("tearDown".equals(function.getName())) {
+          return function;
         }
       }
     }
-
-    public List<SwiftVariableDeclaration> getVariables() {
-      return variables;
-    }
+    return null;
   }
 
   private List<String> getWritableVariableNames() {
-
-    //List<SwiftVariableDeclaration> variables = new ArrayList<>();
-    //for (PsiElement element : classDeclaration.getChildren()) {
-    //  if (element instanceof SwiftVariableDeclaration) {
-    //    SwiftVariableDeclaration variable = (SwiftVariableDeclaration)element;
-    //    boolean isOptional = PsiTreeUtil.findChildOfType(element, SwiftOptionalTypeElement.class) != null;
-    //    boolean isConstant = variable.isConstant();
-    //    boolean isComputed = variable.getPatternInitializerList().get(0).isComputed();
-    //    if (isOptional && !isConstant && !isComputed) {
-    //      variables.add(variable);
-    //    }
-    //  }
-    //}
-    //WritableVariableVistor vistor = new WritableVariableVistor();
-    //classDeclaration.getFirstChild().accept(vistor);
 
     return Arrays.asList(classDeclaration.getChildren())
       .stream()
@@ -128,11 +115,47 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
     classDeclaration.addBefore(tearDown, classDeclaration.getLastChild());
   }
 
-  @Override
-  public boolean isAvailable(@NotNull Project project, Editor editor, @NotNull PsiElement element) {
+  private void replaceTearDownMethod(SwiftFunctionDeclaration tearDownMethod, List<String> variableNames) {
+    SwiftCodeBlock codeBlock = tearDownMethod.getCodeBlock();
+    if (codeBlock == null) {
+      return; // TODO: error
+    }
+    PsiElement superExpression = findSuperExpression(codeBlock);
+    if (superExpression == null) {
+      addSuperCall(codeBlock);
+      replaceTearDownMethod(tearDownMethod, variableNames);
+      return;
+    }
+    variableNames = removeExistingNilledVariables(variableNames, codeBlock);
+    addVariableNames(variableNames, codeBlock, superExpression);
+  }
 
-    SwiftClassDeclaration classDeclaration = PsiTreeUtil.getParentOfType(element, SwiftClassDeclaration.class);
-    return MySwiftPsiUtil.isSubclassOf(classDeclaration, "XCTestCase");
+  private PsiElement findSuperExpression(SwiftCodeBlock codeBlock) {
+    for (PsiElement element : codeBlock.getChildren()) {
+      if (element.getText().equals("super.tearDown()")) {
+        return element;
+      }
+    }
+    return null;
+  }
+
+  private void addSuperCall(SwiftCodeBlock codeBlock) {
+    PsiElement superExpression;
+    superExpression = elementFactory.createExpression("super.tearDown()", null);
+    codeBlock.addBefore(superExpression, codeBlock.getLastChild());
+  }
+
+  private void addVariableNames(List<String> variableNames, SwiftCodeBlock codeBlock, PsiElement superExpression) {
+    for (String name : variableNames) {
+      SwiftExpression expression = elementFactory.createExpression(name + " = nil", null);
+      codeBlock.addBefore(expression, superExpression);
+    }
+  }
+
+  private List<String> removeExistingNilledVariables(List<String> variableNames, SwiftCodeBlock codeBlock) {
+    Set<String> statementHash = Arrays.stream(codeBlock.getChildren()).map(c -> c.getText().replaceAll("\\s", "")).collect(Collectors.toSet());
+    variableNames = variableNames.stream().filter(v -> !statementHash.contains(v + "=nil")).collect(Collectors.toList());
+    return variableNames;
   }
 
   @NotNull

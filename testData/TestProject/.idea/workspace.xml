@@ -15,21 +15,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimpleTearDown.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
+      <file leaf-file-name="ReplaceTearDown.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+            <state relative-caret-position="75">
+              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SimpleTearDown_expected.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
+      <file leaf-file-name="ReplaceTearDown_expected.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="90">
+              <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -47,10 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Expected/testSimpleProtocolMock2.swift" />
-        <option value="$PROJECT_DIR$/Expected/SimpleProtocolMock2.swift" />
-        <option value="$PROJECT_DIR$/Expected/OptionalProtocolMock.swift" />
-        <option value="$PROJECT_DIR$/Expected/SimpleProtocolMock.swift" />
         <option value="$PROJECT_DIR$/Expected/OverloadProtocolMock.swift" />
         <option value="$PROJECT_DIR$/PropertyMock.swift" />
         <option value="$PROJECT_DIR$/PropertyMock_expected.swift" />
@@ -98,6 +94,10 @@
         <option value="$PROJECT_DIR$/NotAvailableNoXCTestCaseSubclass.swift" />
         <option value="$PROJECT_DIR$/SimpleTearDown.swift" />
         <option value="$PROJECT_DIR$/SimpleTearDown_expected.swift" />
+        <option value="$PROJECT_DIR$/ReplaceTearDownNoSuper_expected.swift" />
+        <option value="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" />
+        <option value="$PROJECT_DIR$/ReplaceTearDown.swift" />
+        <option value="$PROJECT_DIR$/ReplaceTearDown_expected.swift" />
       </list>
     </option>
   </component>
@@ -198,7 +198,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="TestProjectTests" />
+    <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -410,12 +410,12 @@
       <workItem from="1492953059419" duration="593000" />
       <workItem from="1493537676845" duration="6000" />
       <workItem from="1494157506877" duration="29000" />
-      <workItem from="1494158048117" duration="8710000" />
+      <workItem from="1494158048117" duration="13454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77936000" />
+    <option name="totallyTimeSpent" value="82680000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -455,14 +455,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="appcode.project-settings://f7a3b672">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MockGeneratorTestTests/ExpectedMockProtocol.swift" />
-    <entry file="file://$PROJECT_DIR$/MockGeneratorTestTests/MockProtocol.swift" />
-    <entry file="file://$PROJECT_DIR$/MockGeneratorTest/Protocol.swift" />
     <entry file="appcode.project-settings://614a1169">
       <provider selected="true" editor-type-id="AppCode.ProjectSettings">
         <state />
@@ -757,15 +749,47 @@
     <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="465">
+          <caret line="31" column="18" lean-forward="false" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDownNoSuper.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDownNoSuper_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
           <folding />
         </state>
       </provider>
