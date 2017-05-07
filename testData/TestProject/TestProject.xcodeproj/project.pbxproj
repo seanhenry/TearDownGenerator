@@ -10,7 +10,9 @@
 		14F5FC2C1EBF446D00442884 /* SimpleTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF88A3EC2C04D186B24BD /* SimpleTearDown.swift */; };
 		35CDF06D44F883D45A5B6D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF434C8CF2AC28EBA0449 /* LaunchScreen.storyboard */; };
 		35CDF083C033EFE1956DBF5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35CDFB629531500C3AF481FF /* Info.plist */; };
+		35CDF10E20898DA5CD084E48 /* AvailableDeepXCTestCaseSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF54E00597A6E4F7C3002 /* AvailableDeepXCTestCaseSubclass.swift */; };
 		35CDF209D142DEDBA2F4F098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF7810EE85C405F75C589 /* AppDelegate.swift */; };
+		35CDF2B34B94CFDADD0ADBD1 /* AvailableXCTestCaseSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFC6C86543FAD3C89F316 /* AvailableXCTestCaseSubclass.swift */; };
 		35CDFCEA55877C5103C69A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF5E9615CB94E27438335 /* Main.storyboard */; };
 		35CDFEC64BDE844E131B979D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF3913F0CE5933271C8B8 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -31,11 +33,13 @@
 		35CDF005D869C31B4C4CDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35CDF1C8EAA0DC332B941BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35CDF3913F0CE5933271C8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
+		35CDF54E00597A6E4F7C3002 /* AvailableDeepXCTestCaseSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableDeepXCTestCaseSubclass.swift; sourceTree = "<group>"; };
 		35CDF6DD96F1F58D8B8E190D /* SimpleTearDown_expected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTearDown_expected.swift; sourceTree = "<group>"; };
 		35CDF7810EE85C405F75C589 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35CDF7E4282125FB61B4290B /* TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35CDF88A3EC2C04D186B24BD /* SimpleTearDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTearDown.swift; sourceTree = "<group>"; };
 		35CDFB629531500C3AF481FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		35CDFC6C86543FAD3C89F316 /* AvailableXCTestCaseSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableXCTestCaseSubclass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +97,8 @@
 				35CDF06CB3213CCC22CA7148 /* Products */,
 				35CDF6DD96F1F58D8B8E190D /* SimpleTearDown_expected.swift */,
 				35CDF88A3EC2C04D186B24BD /* SimpleTearDown.swift */,
+				35CDFC6C86543FAD3C89F316 /* AvailableXCTestCaseSubclass.swift */,
+				35CDF54E00597A6E4F7C3002 /* AvailableDeepXCTestCaseSubclass.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -195,6 +201,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F5FC2C1EBF446D00442884 /* SimpleTearDown.swift in Sources */,
+				35CDF2B34B94CFDADD0ADBD1 /* AvailableXCTestCaseSubclass.swift in Sources */,
+				35CDF10E20898DA5CD084E48 /* AvailableDeepXCTestCaseSubclass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

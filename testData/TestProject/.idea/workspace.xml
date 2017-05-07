@@ -12,24 +12,14 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SimpleTearDown.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
+      <file leaf-file-name="AvailableDeepXCTestCaseSubclass.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleTearDown_expected.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="90">
+              <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -46,8 +36,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/MockGeneratorTestTests/MockProtocol.swift" />
-        <option value="$PROJECT_DIR$/MockGeneratorTest/Protocol.swift" />
         <option value="$PROJECT_DIR$/TestSimpleProtocolMock2.swift" />
         <option value="$PROJECT_DIR$/Expected/testSimpleProtocolMock2.swift" />
         <option value="$PROJECT_DIR$/Expected/SimpleProtocolMock2.swift" />
@@ -97,6 +85,8 @@
         <option value="$PROJECT_DIR$/AssociatedTypeProtocolMock.swift" />
         <option value="$PROJECT_DIR$/SimpleTearDown_expected.swift" />
         <option value="$PROJECT_DIR$/SimpleTearDown.swift" />
+        <option value="$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift" />
+        <option value="$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift" />
       </list>
     </option>
   </component>
@@ -409,12 +399,12 @@
       <workItem from="1492953059419" duration="593000" />
       <workItem from="1493537676845" duration="6000" />
       <workItem from="1494157506877" duration="29000" />
-      <workItem from="1494158048117" duration="851000" />
+      <workItem from="1494158048117" duration="2638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70077000" />
+    <option name="totallyTimeSpent" value="71864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -454,8 +444,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MockGeneratorTest/Protocol.swift" />
-    <entry file="file://$PROJECT_DIR$/MockGeneratorTestTests/MockProtocol.swift" />
     <entry file="appcode.project-settings://39cdfc21">
       <provider selected="true" editor-type-id="AppCode.ProjectSettings">
         <state />
@@ -736,6 +724,14 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -746,8 +742,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding />
         </state>
       </provider>

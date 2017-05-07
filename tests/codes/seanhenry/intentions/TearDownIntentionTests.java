@@ -19,6 +19,7 @@ import codes.seanhenry.helpers.MyHeavyIdeaTestFixtureImpl;
 import com.intellij.codeInsight.intention.IntentionAction;
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.project.Project;
+import com.intellij.openapi.util.Computable;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.vfs.newvfs.impl.VfsRootAccess;
 import com.intellij.psi.PsiFile;
@@ -28,6 +29,7 @@ import com.intellij.testFramework.PlatformTestCase;
 import com.intellij.testFramework.fixtures.CodeInsightTestFixture;
 import com.intellij.testFramework.fixtures.impl.CodeInsightTestFixtureImpl;
 import com.intellij.testFramework.fixtures.impl.TempDirTestFixtureImpl;
+import org.junit.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -74,29 +76,53 @@ public class TearDownIntentionTests extends PlatformTestCase {
     return myFixture.getProject();
   }
 
-  public void testAll() throws Exception {
+  public void testAvailable() throws Exception {
+
     String[] fileNames = {
-      "SimpleTearDown",
+      "AvailableXCTestCaseSubclass",
+      "AvailableDeepXCTestCaseSubclass",
     };
 
-    for (String fileName : fileNames) {
-      runTest(fileName);
+    for (String fileName: fileNames) {
+      Assert.assertTrue(runIsAvailableTest(fileName));
     }
   }
 
+  //public void testAll() throws Exception {
+  //  String[] fileNames = {
+  //    //"SimpleTearDown",
+  //  };
+  //
+  //  for (String fileName : fileNames) {
+  //    runTest(fileName);
+  //  }
+  //}
+
   private void runTest(String fileName) throws IOException {
+
     String expectedFileName = fileName + "_expected.swift";
+    PsiFile psiFile = configureFile(fileName);
+    IntentionAction action = myFixture.findSingleIntention("Generate tear down");
+
+    WriteCommandAction.runWriteCommandAction(getActiveProject(), () -> action.invoke(getActiveProject(), myFixture.getEditor(), psiFile));
+    myFixture.checkResultByFile(expectedFileName, true);
+  }
+
+  private boolean runIsAvailableTest(String fileName) {
+
+    configureFile(fileName);
+    return myFixture.getAvailableIntention("Generate tear down") != null;
+  }
+
+  private PsiFile configureFile(String fileName) {
+
     String testFileName = fileName + ".swift";
     System.out.println("Running test for " + fileName);
     PsiFile[] files = FilenameIndex.getFilesByName(getActiveProject(), testFileName, GlobalSearchScope.projectScope(getActiveProject()));
     PsiFile psiFile = files[0];
     VirtualFile file = psiFile.getVirtualFile();
     myFixture.configureFromExistingVirtualFile(file);
-
-    IntentionAction action = myFixture.findSingleIntention("Generate tear down");
-
-    WriteCommandAction.runWriteCommandAction(getActiveProject(), () -> action.invoke(getActiveProject(), myFixture.getEditor(), psiFile));
-    myFixture.checkResultByFile(expectedFileName, true);
+    return psiFile;
   }
 
   private void copyFolder(File sourceFolder, File destinationFolder) throws IOException {
