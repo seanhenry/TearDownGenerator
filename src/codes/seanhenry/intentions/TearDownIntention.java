@@ -40,7 +40,7 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   @NotNull
   @Override
   public String getText() {
-    return "GET TEXT";
+    return "Generate tear down";
   }
 
   @Nls
