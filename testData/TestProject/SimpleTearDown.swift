@@ -1,7 +1,7 @@
 import XCTest
 
 class SimpleTearDown: XCTestCase {
-<caret>
+
     var optional: String?
     let constantOptional: String? = ""
     var anotherOptional: String?
@@ -26,5 +26,5 @@ class SimpleTearDown: XCTestCase {
     var didSetOptional: UInt? {
         willSet {}
         didSet {}
-    }
+    }<caret>
 }

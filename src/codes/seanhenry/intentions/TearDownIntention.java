@@ -30,7 +30,6 @@ import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
@@ -45,7 +44,12 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   public boolean isAvailable(@NotNull Project project, Editor editor, @NotNull PsiElement element) {
 
     SwiftClassDeclaration classDeclaration = PsiTreeUtil.getParentOfType(element, SwiftClassDeclaration.class);
-    return MySwiftPsiUtil.isSubclassOf(classDeclaration, "XCTestCase");
+    if (classDeclaration == null) {
+      return false;
+    }
+    return MySwiftPsiUtil.isSubclassOf(classDeclaration, "XCTestCase")
+           && (findTopElementUnderCursor(element, classDeclaration) != null
+           || getTearDownMethod() != null);
   }
 
   @Override
@@ -59,8 +63,31 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
     if (tearDownMethod != null) {
       replaceTearDownMethod(tearDownMethod, writableNames);
     } else {
-      createTearDownMethod(writableNames);
+      PsiElement caretElement = findTopElementUnderCursor(element, classDeclaration);
+      createTearDownMethod(writableNames, caretElement);
     }
+  }
+
+  private PsiElement findTopElementUnderCursor(PsiElement element, SwiftClassDeclaration classDeclaration) {
+    if (PsiTreeUtil.getParentOfType(element, SwiftClassDeclaration.class) == null) {
+      return null;
+    }
+    while (element.getParent() != classDeclaration) {
+      element = element.getParent();
+    }
+    if (element instanceof SwiftStatement) {
+      return element;
+    }
+    do {
+      element = element.getPrevSibling();
+    } while (element != null && !(element instanceof SwiftStatement));
+    if (element instanceof SwiftStatement) {
+      return element;
+    }
+    if (classDeclaration.getStatementList().isEmpty()) {
+      return null;
+    }
+    return classDeclaration.getStatementList().get(0).getPrevSibling();
   }
 
   private SwiftFunctionDeclaration getTearDownMethod() {
@@ -104,13 +131,13 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
     }
   }
 
-  private void createTearDownMethod(List<String> variableNames) {
+  private void createTearDownMethod(List<String> variableNames, PsiElement caretElement) {
     SwiftFunctionDeclaration tearDown = elementFactory
       .createFunction("override func tearDown() { " + NEWLINE +
                       variableNames.stream().map(v -> v + " = nil").collect(Collectors.joining(NEWLINE)) + NEWLINE +
                       "super.tearDown() " + NEWLINE +
                       "}");
-    classDeclaration.addBefore(tearDown, classDeclaration.getLastChild());
+    classDeclaration.addAfter(tearDown, caretElement);
   }
 
   private void replaceTearDownMethod(SwiftFunctionDeclaration tearDownMethod, List<String> variableNames) {

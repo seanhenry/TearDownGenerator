@@ -9,5 +9,6 @@ class DeepTests: DeeperTests {
 }
 
 class ShallowTests: DeepTests {
+    var variable: String?
     <caret>
 }
