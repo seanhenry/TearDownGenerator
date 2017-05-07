@@ -86,6 +86,7 @@ public class TearDownIntentionTests extends PlatformTestCase {
     for (String fileName: fileNames) {
       Assert.assertTrue(runIsAvailableTest(fileName));
     }
+    Assert.assertFalse(runIsAvailableTest("NotAvailableNoXCTestCaseSubclass"));
   }
 
   //public void testAll() throws Exception {
