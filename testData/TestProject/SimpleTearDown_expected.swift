@@ -19,12 +19,22 @@ class SimpleTearDown: XCTestCase {
         set {  }
         get { return 0 }
     }
+    var flippedReadWriteOptional: UInt? {
+        get { return 0 }
+        set {  }
+    }
+    var didSetOptional: UInt? {
+        willSet {}
+        didSet {}
+    }
     override func tearDown() {
         optional = nil
         anotherOptional = nil
         privateOptional = nil
         iuo = nil
         readWriteOptional = nil
+        flippedReadWriteOptional = nil
+        didSetOptional = nil
         super.tearDown()
     }
 }

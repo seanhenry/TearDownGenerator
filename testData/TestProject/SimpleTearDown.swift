@@ -19,4 +19,12 @@ class SimpleTearDown: XCTestCase {
         set {  }
         get { return 0 }
     }
+    var flippedReadWriteOptional: UInt? {
+        get { return 0 }
+        set {  }
+    }
+    var didSetOptional: UInt? {
+        willSet {}
+        didSet {}
+    }
 }
