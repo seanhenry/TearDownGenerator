@@ -25,6 +25,8 @@ import com.intellij.psi.PsiElement;
 import com.intellij.psi.util.PsiTreeUtil;
 import com.intellij.util.IncorrectOperationException;
 import com.jetbrains.swift.psi.SwiftClassDeclaration;
+import com.jetbrains.swift.psi.SwiftFunctionDeclaration;
+import com.jetbrains.swift.psi.SwiftPsiElementFactory;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 
@@ -33,7 +35,14 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   @Override
   public void invoke(@NotNull Project project, Editor editor, @NotNull PsiElement element) throws IncorrectOperationException {
 
-
+    SwiftClassDeclaration classDeclaration = PsiTreeUtil.getParentOfType(element, SwiftClassDeclaration.class);
+    assert classDeclaration != null;
+    SwiftFunctionDeclaration tearDown = SwiftPsiElementFactory.getInstance(element)
+      .createFunction("override func tearDown() { " +
+                        "variable = nil\n" +
+                        "super.tearDown() " +
+                      "}");
+    classDeclaration.addBefore(tearDown, classDeclaration.getLastChild());
   }
 
   @Override
@@ -53,7 +62,7 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   @NotNull
   @Override
   public String getFamilyName() {
-    return "FAMILY NAME";
+    return getText();
   }
 
   @Override
@@ -79,6 +88,6 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   @NotNull
   @Override
   public String getComponentName() {
-    return "COMPONENT NAME";
+    return "Tear down generator";
   }
 }
