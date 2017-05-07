@@ -26,5 +26,6 @@ class SimpleTearDown: XCTestCase {
     var didSetOptional: UInt? {
         willSet {}
         didSet {}
-    }<caret>
+    }
+    var multi: String?, line: String?, statement: String?<caret>
 }

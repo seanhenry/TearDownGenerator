@@ -27,6 +27,7 @@ class SimpleTearDown: XCTestCase {
         willSet {}
         didSet {}
     }
+    var multi: String?, line: String?, statement: String?
     override func tearDown() {
         optional = nil
         anotherOptional = nil
@@ -35,6 +36,9 @@ class SimpleTearDown: XCTestCase {
         readWriteOptional = nil
         flippedReadWriteOptional = nil
         didSetOptional = nil
+        multi = nil
+        line = nil
+        statement = nil
         super.tearDown()
     }
 }

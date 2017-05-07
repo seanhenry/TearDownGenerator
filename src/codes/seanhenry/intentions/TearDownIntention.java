@@ -31,6 +31,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -108,24 +109,23 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
       .filter(e -> e instanceof SwiftVariableDeclaration)
       .map(e -> (SwiftVariableDeclaration) e)
       .filter(v -> !v.isConstant())
+      .flatMap(v -> v.getPatternInitializerList().stream())
       .filter(this::isNilable)
       .filter(this::isWritable)
-      .map(v -> PsiTreeUtil.findChildOfType(v, SwiftIdentifierPattern.class))
+      .map(p -> PsiTreeUtil.findChildOfType(p, SwiftIdentifierPattern.class))
+      .filter(Objects::nonNull)
       .map(PsiNamedElement::getName)
       .collect(Collectors.toList());
   }
 
-  private boolean isNilable(SwiftVariableDeclaration variable) {
-    return PsiTreeUtil.findChildOfAnyType(variable, SwiftOptionalTypeElement.class, SwiftImplicitlyUnwrappedOptionalTypeElement.class) != null;
+  private boolean isNilable(SwiftPatternInitializer pattern) {
+    return PsiTreeUtil.findChildOfAnyType(pattern, SwiftOptionalTypeElement.class, SwiftImplicitlyUnwrappedOptionalTypeElement.class) != null;
   }
 
-  private boolean isWritable(SwiftVariableDeclaration variable) {
-    if (variable.getPatternInitializerList().isEmpty()) {
-      return false;
-    }
-    boolean isComputed = variable.getPatternInitializerList().get(0).isComputed();
+  private boolean isWritable(SwiftPatternInitializer pattern) {
+    boolean isComputed = pattern.isComputed();
     if (isComputed) {
-      return PsiTreeUtil.findChildOfType(variable, SwiftSetterClause.class) != null;
+      return PsiTreeUtil.findChildOfType(pattern, SwiftSetterClause.class) != null;
     } else {
       return true;
     }
