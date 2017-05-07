@@ -102,6 +102,7 @@ public class TearDownIntentionTests extends PlatformTestCase {
       "SimpleTearDown",
       "ReplaceTearDown",
       "ReplaceTearDownNoSuper",
+      "ReplaceTearDownClassMethodEdgeCase",
     };
 
     for (String fileName : fileNames) {

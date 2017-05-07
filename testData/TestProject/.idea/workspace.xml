@@ -19,17 +19,37 @@
         <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
+              <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReplaceTearDown_expected.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReplaceTearDown_expected.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
               <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplaceTearDownClassMethodEdgeCase.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReplaceTearDownClassMethodEdgeCase_expected.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -47,8 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Expected/OverloadProtocolMock.swift" />
-        <option value="$PROJECT_DIR$/PropertyMock.swift" />
         <option value="$PROJECT_DIR$/PropertyMock_expected.swift" />
         <option value="$PROJECT_DIR$/SimpleProtocol.swift" />
         <option value="$PROJECT_DIR$/SimpleProtocolMock.swift" />
@@ -98,6 +116,8 @@
         <option value="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDown.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDown_expected.swift" />
+        <option value="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift" />
+        <option value="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift" />
       </list>
     </option>
   </component>
@@ -410,12 +430,12 @@
       <workItem from="1492953059419" duration="593000" />
       <workItem from="1493537676845" duration="6000" />
       <workItem from="1494157506877" duration="29000" />
-      <workItem from="1494158048117" duration="13454000" />
+      <workItem from="1494158048117" duration="14102000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82680000" />
+    <option name="totallyTimeSpent" value="83328000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -455,12 +475,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="appcode.project-settings://614a1169">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Expected/OptionalProtocolMock.swift" />
     <entry file="file://$PROJECT_DIR$/Expected/SimpleProtocolMock.swift" />
     <entry file="file://$PROJECT_DIR$/Expected/OverloadProtocolMock.swift" />
     <entry file="file://$PROJECT_DIR$/SimpleProtocol.swift">
@@ -781,7 +795,7 @@
     <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
+          <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="6" selection-end-column="38" />
           <folding />
         </state>
       </provider>
@@ -790,6 +804,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding />
         </state>
       </provider>

@@ -67,8 +67,7 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
     for (PsiElement child : classDeclaration.getChildren()) {
       if (child instanceof SwiftFunctionDeclaration) {
         SwiftFunctionDeclaration function = (SwiftFunctionDeclaration)child;
-        // TODO: Check for class edge case
-        if ("tearDown".equals(function.getName())) {
+        if ("tearDown".equals(function.getName()) && !function.isStatic()) {
           return function;
         }
       }
@@ -78,8 +77,7 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
 
   private List<String> getWritableVariableNames() {
 
-    return Arrays.asList(classDeclaration.getChildren())
-      .stream()
+    return Arrays.stream(classDeclaration.getChildren())
       .filter(e -> e instanceof SwiftVariableDeclaration)
       .map(e -> (SwiftVariableDeclaration) e)
       .filter(v -> !v.isConstant())
