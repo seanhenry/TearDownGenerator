@@ -76,8 +76,13 @@ public class TearDownIntentionTests extends PlatformTestCase {
     return myFixture.getProject();
   }
 
-  public void testAvailable() throws Exception {
+  public void testAll() throws Exception {
+    runAvailableTests();
+    runUnavailableTests();
+    runInvokeTests();
+  }
 
+  private void runAvailableTests() throws Exception {
     String[] fileNames = {
       "AvailableXCTestCaseSubclass",
       "AvailableDeepXCTestCaseSubclass",
@@ -86,20 +91,23 @@ public class TearDownIntentionTests extends PlatformTestCase {
     for (String fileName: fileNames) {
       Assert.assertTrue(runIsAvailableTest(fileName));
     }
+  }
+
+  private void runUnavailableTests() throws Exception {
     Assert.assertFalse(runIsAvailableTest("NotAvailableNoXCTestCaseSubclass"));
   }
 
-  //public void testAll() throws Exception {
-  //  String[] fileNames = {
-  //    //"SimpleTearDown",
-  //  };
-  //
-  //  for (String fileName : fileNames) {
-  //    runTest(fileName);
-  //  }
-  //}
+  private void runInvokeTests() throws Exception {
+    String[] fileNames = {
+      "SimpleTearDown",
+    };
 
-  private void runTest(String fileName) throws IOException {
+    for (String fileName : fileNames) {
+      runTest(fileName);
+    }
+  }
+
+  private void runTest(String fileName) throws Exception {
 
     String expectedFileName = fileName + "_expected.swift";
     PsiFile psiFile = configureFile(fileName);
@@ -109,13 +117,13 @@ public class TearDownIntentionTests extends PlatformTestCase {
     myFixture.checkResultByFile(expectedFileName, true);
   }
 
-  private boolean runIsAvailableTest(String fileName) {
+  private boolean runIsAvailableTest(String fileName) throws Exception {
 
     configureFile(fileName);
     return myFixture.getAvailableIntention("Generate tear down") != null;
   }
 
-  private PsiFile configureFile(String fileName) {
+  private PsiFile configureFile(String fileName) throws Exception {
 
     String testFileName = fileName + ".swift";
     System.out.println("Running test for " + fileName);
