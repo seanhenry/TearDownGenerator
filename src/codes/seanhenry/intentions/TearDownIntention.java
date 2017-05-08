@@ -29,7 +29,6 @@ import com.jetbrains.swift.psi.*;
 import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 import java.util.Set;
@@ -92,9 +91,9 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   }
 
   private SwiftFunctionDeclaration getTearDownMethod() {
-    for (PsiElement child : classDeclaration.getChildren()) {
-      if (child instanceof SwiftFunctionDeclaration) {
-        SwiftFunctionDeclaration function = (SwiftFunctionDeclaration)child;
+    for (PsiElement statement : classDeclaration.getStatementList()) {
+      if (statement instanceof SwiftFunctionDeclaration) {
+        SwiftFunctionDeclaration function = (SwiftFunctionDeclaration)statement;
         if ("tearDown".equals(function.getName()) && !function.isStatic()) {
           return function;
         }
@@ -105,9 +104,9 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
 
   private List<String> getWritableVariableNames() {
 
-    return Arrays.stream(classDeclaration.getChildren())
-      .filter(e -> e instanceof SwiftVariableDeclaration)
-      .map(e -> (SwiftVariableDeclaration) e)
+    return classDeclaration.getStatementList().stream()
+      .filter(s -> s instanceof SwiftVariableDeclaration)
+      .map(s -> (SwiftVariableDeclaration) s)
       .filter(v -> !v.isConstant())
       .flatMap(v -> v.getPatternInitializerList().stream())
       .filter(this::isNilable)
@@ -156,7 +155,7 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   }
 
   private PsiElement findSuperExpression(SwiftCodeBlock codeBlock) {
-    for (PsiElement element : codeBlock.getChildren()) {
+    for (PsiElement element : codeBlock.getStatementList()) {
       if (element.getText().equals("super.tearDown()")) {
         return element;
       }
@@ -178,7 +177,10 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   }
 
   private List<String> removeExistingNilledVariables(List<String> variableNames, SwiftCodeBlock codeBlock) {
-    Set<String> statementHash = codeBlock.getStatements().stream().map(c -> c.getText().replaceAll("\\s|self\\.", "")).collect(Collectors.toSet());
+    Set<String> statementHash = codeBlock.getStatementList()
+      .stream()
+      .map(s -> s.getText().replaceAll("\\s|self\\.", ""))
+      .collect(Collectors.toSet());
     variableNames = variableNames.stream().filter(v -> !statementHash.contains(v + "=nil")).collect(Collectors.toList());
     return variableNames;
   }
