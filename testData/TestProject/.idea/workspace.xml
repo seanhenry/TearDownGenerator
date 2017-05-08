@@ -15,21 +15,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReplaceTearDown.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
+      <file leaf-file-name="FaultyTearDown.swift" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FaultyTearDown.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="7" selection-end-column="36" />
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReplaceTearDown_expected.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
+      <file leaf-file-name="FaultyTearDown_expected.swift" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FaultyTearDown_expected.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            <state relative-caret-position="30">
+              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -47,8 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/DeepInheritanceMock_expected.swift" />
-        <option value="$PROJECT_DIR$/DeepInheritanceMock.swift" />
         <option value="$PROJECT_DIR$/DiamondInheritanceProtocol.swift" />
         <option value="$PROJECT_DIR$/DiamondInheritanceProtocolMock.swift" />
         <option value="$PROJECT_DIR$/MultiAssociatedTypeProtocol.swift" />
@@ -98,6 +96,8 @@
         <option value="$PROJECT_DIR$/SimpleTearDown_expected.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDown.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDown_expected.swift" />
+        <option value="$PROJECT_DIR$/FaultyTearDown.swift" />
+        <option value="$PROJECT_DIR$/FaultyTearDown_expected.swift" />
       </list>
     </option>
   </component>
@@ -423,7 +423,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89708000" />
+    <option name="totallyTimeSpent" value="89792000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -463,8 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/DeepInheritance.swift" />
-    <entry file="file://$PROJECT_DIR$/DeepInheritanceMock_expected.swift" />
     <entry file="file://$PROJECT_DIR$/MultipleProtocol.swift" />
     <entry file="file://$PROJECT_DIR$/MultiAssociatedTypeProtocolMock_expected.swift" />
     <entry file="file://$PROJECT_DIR$/MultiAssociatedTypeProtocolMock.swift" />
@@ -620,18 +618,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="38" lean-forward="true" selection-start-line="6" selection-start-column="38" selection-end-line="7" selection-end-column="36" />
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        <state relative-caret-position="90">
+          <caret line="6" column="38" lean-forward="false" selection-start-line="6" selection-start-column="38" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FaultyTearDown_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FaultyTearDown.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

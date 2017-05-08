@@ -22,6 +22,7 @@
 		35CDFA176923BF2384E6201D /* ReplaceTearDownClassMethodEdgeCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFE560A4CF80901C2FADD /* ReplaceTearDownClassMethodEdgeCase.swift */; };
 		35CDFCEA55877C5103C69A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF5E9615CB94E27438335 /* Main.storyboard */; };
 		35CDFEC64BDE844E131B979D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF3913F0CE5933271C8B8 /* Assets.xcassets */; };
+		35CDFF86A8723C600FB2C521 /* FaultyTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFEEF68292925C04D3ABE /* FaultyTearDown.swift */; };
 		35CDFF9D04C6F2D50CDC2B1B /* ReplaceTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF8C2ED6C3E87AC200787 /* ReplaceTearDown.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +59,13 @@
 		35CDF893008319EA44B65894 /* CaretInStatement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaretInStatement.swift; sourceTree = "<group>"; };
 		35CDF8C2ED6C3E87AC200787 /* ReplaceTearDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceTearDown.swift; sourceTree = "<group>"; };
 		35CDFB629531500C3AF481FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = "<group>"; };
+		35CDFBA7FADD41A4864718B4 /* FaultyTearDown_expected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaultyTearDown_expected.swift; sourceTree = "<group>"; };
 		35CDFC1363CBB913A26D3315 /* CaretBetweenStatements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaretBetweenStatements.swift; sourceTree = "<group>"; };
 		35CDFC6C86543FAD3C89F316 /* AvailableXCTestCaseSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailableXCTestCaseSubclass.swift; sourceTree = "<group>"; };
 		35CDFCF50F44C0159602685D /* NotAvailableNoXCTestCaseSubclass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotAvailableNoXCTestCaseSubclass.swift; sourceTree = "<group>"; };
 		35CDFE560A4CF80901C2FADD /* ReplaceTearDownClassMethodEdgeCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceTearDownClassMethodEdgeCase.swift; sourceTree = "<group>"; };
 		35CDFEB56B10F82772DA9207 /* CaretInClassDeclaration_expected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaretInClassDeclaration_expected.swift; sourceTree = "<group>"; };
+		35CDFEEF68292925C04D3ABE /* FaultyTearDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaultyTearDown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				35CDF0DDF09F728082325D12 /* CaretBetweenStatements_expected.swift */,
 				35CDF7372AE98F23621A13B0 /* CaretAtEndOfClassDeclaration.swift */,
 				35CDF515482598FAC4C344BA /* CaretAtEndOfClassDeclaration_expected.swift */,
+				35CDFEEF68292925C04D3ABE /* FaultyTearDown.swift */,
+				35CDFBA7FADD41A4864718B4 /* FaultyTearDown_expected.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -249,6 +254,7 @@
 				35CDF945208CFDFD2768848D /* CaretInStatement.swift in Sources */,
 				35CDF8FC139C6D026683D847 /* CaretBetweenStatements.swift in Sources */,
 				35CDF209CD52591CCA93E739 /* CaretAtEndOfClassDeclaration.swift in Sources */,
+				35CDFF86A8723C600FB2C521 /* FaultyTearDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

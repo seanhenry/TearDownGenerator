@@ -142,7 +142,10 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   private void replaceTearDownMethod(SwiftFunctionDeclaration tearDownMethod, List<String> variableNames) {
     SwiftCodeBlock codeBlock = tearDownMethod.getCodeBlock();
     if (codeBlock == null) {
-      return; // TODO: error
+      SwiftFunctionDeclaration newMethod = elementFactory.createFunction(tearDownMethod.getText() + "{}");
+      tearDownMethod.replace(newMethod);
+      replaceTearDownMethod(getTearDownMethod(), variableNames);
+      return;
     }
     PsiElement superExpression = findSuperExpression(codeBlock);
     if (superExpression == null) {

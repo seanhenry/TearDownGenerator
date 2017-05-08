@@ -107,6 +107,7 @@ public class TearDownIntentionTests extends PlatformTestCase {
       "CaretInClassDeclaration",
       "CaretBetweenStatements",
       "CaretAtEndOfClassDeclaration",
+      "FaultyTearDown",
     };
 
     for (String fileName : fileNames) {
