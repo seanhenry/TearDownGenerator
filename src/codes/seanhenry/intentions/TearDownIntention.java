@@ -178,7 +178,7 @@ public class TearDownIntention extends PsiElementBaseIntentionAction implements 
   }
 
   private List<String> removeExistingNilledVariables(List<String> variableNames, SwiftCodeBlock codeBlock) {
-    Set<String> statementHash = Arrays.stream(codeBlock.getChildren()).map(c -> c.getText().replaceAll("\\s", "")).collect(Collectors.toSet());
+    Set<String> statementHash = codeBlock.getStatements().stream().map(c -> c.getText().replaceAll("\\s|self\\.", "")).collect(Collectors.toSet());
     variableNames = variableNames.stream().filter(v -> !statementHash.contains(v + "=nil")).collect(Collectors.toList());
     return variableNames;
   }
