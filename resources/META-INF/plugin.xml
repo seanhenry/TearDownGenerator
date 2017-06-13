@@ -11,6 +11,7 @@
         <li>Shows warning when properties are not set to nil in tear down.</li>
         <li>Generates a tear down method if one does not exist.</li>
         <li>Sets all optional and implicitly unwrapped optional properties to nil in the tear down.</li>
+        <li>Automatically fix all test files using Code Cleanup.</li>
         <li>Does not disturb existing code when modifying tear down method.</li>
       </ul>
     ]]></description>
@@ -34,6 +35,7 @@
     <localInspection implementationClass="codes.seanhenry.inspections.TearDownInspection"
                      displayName="Properties are not set to nil in tear down"
                      groupName="Swift"
+                     cleanupTool="true"
                      enabledByDefault="true"/>
   </extensions>
 
