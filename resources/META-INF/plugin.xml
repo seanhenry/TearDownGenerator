@@ -39,17 +39,13 @@
   <depends>com.intellij.modules.appcode</depends>
 
   <project-components>
-    <component>
-      <implementation-class>codes.seanhenry.intentions.TearDownIntention</implementation-class>
-    </component>
   </project-components>
 
   <extensions defaultExtensionNs="com.intellij">
-    <intentionAction>
-      <className>codes.seanhenry.intentions.TearDownIntention</className>
-      <category>Tear down</category>
-      <descriptionDirectoryName>TearDown</descriptionDirectoryName>
-    </intentionAction>
+    <localInspection implementationClass="codes.seanhenry.inspections.TearDownInspection"
+                     displayName="Properties are not set to nil in tear down"
+                     groupName="Swift"
+                     enabledByDefault="true"/>
   </extensions>
 
 </idea-plugin>

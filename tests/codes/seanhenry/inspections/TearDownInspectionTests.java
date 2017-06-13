@@ -13,13 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package codes.seanhenry.intentions;
+package codes.seanhenry.inspections;
 
 import codes.seanhenry.helpers.MyHeavyIdeaTestFixtureImpl;
 import com.intellij.codeInsight.intention.IntentionAction;
 import com.intellij.openapi.command.WriteCommandAction;
 import com.intellij.openapi.project.Project;
-import com.intellij.openapi.util.Computable;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.openapi.vfs.newvfs.impl.VfsRootAccess;
 import com.intellij.psi.PsiFile;
@@ -36,7 +35,7 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 
-public class TearDownIntentionTests extends PlatformTestCase {
+public class TearDownInspectionTests extends PlatformTestCase {
 
   private final String dataPath = "/Users/sean/source/plugins/community/TearDown/testData/TestProject";
   private CodeInsightTestFixture myFixture;
@@ -70,6 +69,7 @@ public class TearDownIntentionTests extends PlatformTestCase {
 
     myFixture.setUp();
     myFixture.setTestDataPath(dataPath);
+    myFixture.enableInspections(new TearDownInspection());
   }
 
   public Project getActiveProject() {
@@ -94,7 +94,14 @@ public class TearDownIntentionTests extends PlatformTestCase {
   }
 
   private void runUnavailableTests() throws Exception {
-    Assert.assertFalse(runIsAvailableTest("NotAvailableNoXCTestCaseSubclass"));
+    String[] fileNames = {
+      "NotAvailableNoXCTestCaseSubclass",
+      "NotAvailableAllPropertiesAreSetToNil",
+    };
+
+    for (String fileName: fileNames) {
+      Assert.assertFalse(runIsAvailableTest(fileName));
+    }
   }
 
   private void runInvokeTests() throws Exception {
@@ -103,11 +110,10 @@ public class TearDownIntentionTests extends PlatformTestCase {
       "ReplaceTearDown",
       "ReplaceTearDownNoSuper",
       "ReplaceTearDownClassMethodEdgeCase",
-      "CaretInStatement",
-      "CaretInClassDeclaration",
-      "CaretBetweenStatements",
-      "CaretAtEndOfClassDeclaration",
       "FaultyTearDown",
+      "PlaceTearDownAfterProperties",
+      "PlaceTearDownAfterSetUp",
+      "PlaceTearDownBeforeFirstMethod",
     };
 
     for (String fileName : fileNames) {
@@ -116,23 +122,22 @@ public class TearDownIntentionTests extends PlatformTestCase {
   }
 
   private void runTest(String fileName) throws Exception {
-
     String expectedFileName = fileName + "_expected.swift";
     PsiFile psiFile = configureFile(fileName);
-    IntentionAction action = myFixture.findSingleIntention("Generate tear down");
+    myFixture.checkHighlighting(false, false, true);
+    IntentionAction action = myFixture.findSingleIntention(TearDownInspectionQuickFix.NAME);
 
     WriteCommandAction.runWriteCommandAction(getActiveProject(), () -> action.invoke(getActiveProject(), myFixture.getEditor(), psiFile));
     myFixture.checkResultByFile(expectedFileName, true);
   }
 
   private boolean runIsAvailableTest(String fileName) throws Exception {
-
     configureFile(fileName);
-    return myFixture.getAvailableIntention("Generate tear down") != null;
+    myFixture.checkHighlighting(false, false, true);
+    return myFixture.getAvailableIntention(TearDownInspectionQuickFix.NAME) != null;
   }
 
   private PsiFile configureFile(String fileName) throws Exception {
-
     String testFileName = fileName + ".swift";
     System.out.println("Running test for " + fileName);
     PsiFile[] files = FilenameIndex.getFilesByName(getActiveProject(), testFileName, GlobalSearchScope.projectScope(getActiveProject()));

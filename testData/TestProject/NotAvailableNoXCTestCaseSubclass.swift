@@ -1,5 +1,5 @@
 import XCTest
 
-class NotAvailableNoXCTestCaseSubclass: NSObject {
-    <caret>
+class NotAvailableNoXCTestCaseSubclass<caret>: NSObject {
+
 }

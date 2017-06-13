@@ -1,6 +1,6 @@
 import XCTest
 
-class SimpleTearDown: XCTestCase {
+class <weak_warning descr="Not all properties are set to nil in the tear down.">SimpleTearDown<caret></weak_warning>: XCTestCase {
 
     var optional: String?
     let constantOptional: String? = ""
@@ -27,5 +27,5 @@ class SimpleTearDown: XCTestCase {
         willSet {}
         didSet {}
     }
-    var multi: String?, line: String?, statement: String?<caret>
+    var multi: String?, line: String?, statement: String?
 }
