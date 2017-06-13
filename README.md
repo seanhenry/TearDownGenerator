@@ -1,6 +1,6 @@
 # Test Tear Down Inspection for AppCode
 
-![Generating a tear down method](readme/TearDownInpsection.gif "Generating a tear down method")
+![Generating a tear down method](readme/TearDownInspection.gif "Generating a tear down method")
 
 ## Motivation
 
