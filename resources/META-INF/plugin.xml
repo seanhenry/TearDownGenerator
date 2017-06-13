@@ -1,28 +1,17 @@
-<!--
-  ~ Copyright 2000-2017 JetBrains s.r.o.
-  ~
-  ~ Licensed under the Apache License, Version 2.0 (the "License");
-  ~ you may not use this file except in compliance with the License.
-  ~ You may obtain a copy of the License at
-  ~
-  ~ http://www.apache.org/licenses/LICENSE-2.0
-  ~
-  ~ Unless required by applicable law or agreed to in writing, software
-  ~ distributed under the License is distributed on an "AS IS" BASIS,
-  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-  ~ See the License for the specific language governing permissions and
-  ~ limitations under the License.
-  -->
 <idea-plugin>
   <id>codes.seanhenry.teardown</id>
-  <name>Test Tear Down Generator for AppCode</name>
+  <name>Test Tear Down Inspection for AppCode</name>
   <version>1.0</version>
   <vendor email="hello@seanhenry.codes" url="http://www.seanhenry.codes">Sean Henry</vendor>
 
   <description><![CDATA[
-      Automatically generate tear down methods in your tests in one action.
+  Inspects test classes for properties that are not set to nil in the tear down method
+  and offers to fix the problem by generating the tear down method.
       <ul>
-        <li></li>
+        <li>Shows warning when properties are not set to nil in tear down.</li>
+        <li>Generates a tear down method if one does not exist.</li>
+        <li>Sets all optional and implicitly unwrapped optional properties to nil in the tear down.</li>
+        <li>Does not disturb existing code when modifying tear down method.</li>
       </ul>
     ]]></description>
 
@@ -31,7 +20,7 @@
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="163.0"/>
+  <idea-version since-build="171.0"/>
 
   <actions>
   </actions>
