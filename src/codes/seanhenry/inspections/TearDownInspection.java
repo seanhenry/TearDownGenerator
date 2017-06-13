@@ -4,10 +4,13 @@ import codes.seanhenry.util.MySwiftPsiUtil;
 import codes.seanhenry.util.TearDownUtil;
 import com.intellij.codeInspection.*;
 import com.intellij.psi.PsiElementVisitor;
+import com.intellij.psi.PsiFile;
 import com.jetbrains.swift.psi.*;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.Objects;
 
 public class TearDownInspection extends LocalInspectionTool {
 
@@ -17,6 +20,15 @@ public class TearDownInspection extends LocalInspectionTool {
   @Override
   public PsiElementVisitor buildVisitor(@NotNull ProblemsHolder holder, boolean isOnTheFly) {
     return new TearDownClassVisitor(holder);
+  }
+
+  @Nullable
+  @Override
+  public ProblemDescriptor[] checkFile(@NotNull PsiFile file, @NotNull InspectionManager manager, boolean isOnTheFly) {
+    if (Objects.equals(file.getVirtualFile().getExtension(), "swift")) {
+      return super.checkFile(file, manager, isOnTheFly);
+    }
+    return new ProblemDescriptor[0];
   }
 
   private static class TearDownClassVisitor extends SwiftVisitor {
