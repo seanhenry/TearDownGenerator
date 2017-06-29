@@ -2,6 +2,7 @@ package codes.seanhenry.util;
 
 import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiNamedElement;
+import com.intellij.psi.PsiReference;
 import com.intellij.psi.util.PsiTreeUtil;
 import com.jetbrains.swift.psi.*;
 
@@ -28,12 +29,49 @@ public class TearDownUtil {
   }
 
   public static List<String> removeExistingNilledVariables(List<String> variableNames, SwiftCodeBlock codeBlock) {
-    Set<String> statementHash = codeBlock.getStatementList()
+    List<SwiftStatement> statements = codeBlock.getStatementList();
+    Set<String> nilledProperties = getNilledPropertyNames(statements);
+    Set<String> resolvedNilledProperties = getResolvedNilledPropertyNames(statements);
+    nilledProperties.addAll(resolvedNilledProperties);
+    variableNames = variableNames
       .stream()
-      .map(s -> s.getText().replaceAll("\\s|self\\.", ""))
-      .collect(Collectors.toSet());
-    variableNames = variableNames.stream().filter(v -> !statementHash.contains(v + "=nil")).collect(Collectors.toList());
+      .filter(v -> !nilledProperties.contains(v))
+      .collect(Collectors.toList());
     return variableNames;
+  }
+
+  private static Set<String> getResolvedNilledPropertyNames(List<SwiftStatement> statements) {
+    return statements.stream()
+      .filter(s -> s instanceof SwiftCallExpression)
+      .map(s -> (SwiftCallExpression) s)
+      .map(PsiReference::resolve)
+      .filter(e -> e instanceof SwiftFunctionDeclaration)
+      .map(e -> (SwiftFunctionDeclaration) e)
+      .filter(f -> f.getCodeBlock() != null)
+      .map(SwiftFunctionDeclaration::getCodeBlock)
+      .flatMap(b -> getNilledPropertyNames(b.getStatementList()).stream())
+      .collect(Collectors.toSet());
+  }
+
+  private static Set<String> getNilledPropertyNames(List<SwiftStatement> statements) {
+    return statements.stream()
+      .filter(s -> s instanceof SwiftBinaryExpression)
+      .map(TearDownUtil::removeWhitespaceAndSelf)
+      .filter(TearDownUtil::isNilledStatement)
+      .map(TearDownUtil::removeNilledStatement)
+      .collect(Collectors.toSet());
+  }
+
+  private static String removeWhitespaceAndSelf(SwiftStatement statement) {
+    return statement.getText().replaceAll("\\s|self\\.", "");
+  }
+
+  private static boolean isNilledStatement(String statement) {
+    return statement.endsWith("=nil");
+  }
+
+  private static String removeNilledStatement(String statement) {
+    return statement.replaceAll("=nil", "");
   }
 
   public static SwiftFunctionDeclaration getTearDownMethod(SwiftClassDeclaration classDeclaration) {

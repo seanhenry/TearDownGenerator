@@ -70,6 +70,7 @@ public class TearDownInspectionTest extends PlatformTestCase {
     String[] fileNames = {
       "NotAvailableNoXCTestCaseSubclass",
       "NotAvailableAllPropertiesAreSetToNil",
+      "NotAvailableNilInAnotherMethod",
     };
 
     for (String fileName: fileNames) {
@@ -87,6 +88,7 @@ public class TearDownInspectionTest extends PlatformTestCase {
       "PlaceTearDownAfterProperties",
       "PlaceTearDownAfterSetUp",
       "PlaceTearDownBeforeFirstMethod",
+      "NilInAnotherMethod",
     };
 
     for (String fileName : fileNames) {
