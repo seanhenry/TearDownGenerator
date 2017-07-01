@@ -1,4 +1,4 @@
-# Test Tear Down Inspection for AppCode
+# Swift Test Tear Down Inspection for AppCode
 
 ![Generating a tear down method](readme/TearDownInspection.gif "Generating a tear down method")
 
@@ -18,7 +18,7 @@ See the usages below on how to fix a single test file and how to apply the fix o
 - Open AppCode → Preferences `⌘,`
 - Go to Plugins
 - Click Browse repositories...
-- Search for 'Test Tear Down Inspection for AppCode'
+- Search for 'Swift Test Tear Down Inspection for AppCode'
 - Click Install
 - Restart AppCode
 
