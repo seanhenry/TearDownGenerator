@@ -30,7 +30,7 @@ With a Swift test file open, the class name will be highlighted with a warning i
 You can then ask AppCode to fix the problem for you.
   
 - Move the cursor to the class name
-- Press `alt ↩`
+- Press `⌥↩`
 - Select 'Set properties to nil in tear down'
 
 ### Batch find problems
