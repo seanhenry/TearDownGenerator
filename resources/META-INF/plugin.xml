@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>codes.seanhenry.teardown</id>
-  <name>Test Tear Down Inspection for AppCode</name>
-  <version>1.0</version>
+  <name>Swift Test Tear Down Inspection for AppCode</name>
+  <version>2</version>
   <vendor email="hello@seanhenry.codes" url="http://www.seanhenry.codes">Sean Henry</vendor>
 
   <description><![CDATA[
@@ -13,10 +13,12 @@
         <li>Sets all optional and implicitly unwrapped optional properties to nil in the tear down.</li>
         <li>Does not disturb existing code when modifying tear down method.</li>
         <li>Automatically fix all test files using Code Cleanup.</li>
+        <li>Analyses methods called by the tear down for properties that are already set to nil.</li>
       </ul>
     ]]></description>
 
   <change-notes><![CDATA[
+  Analyses methods called by the tear down for properties that are already set to nil.
     ]]>
   </change-notes>
 
