@@ -1,4 +1,4 @@
-package codes.seanhenry.helpers;
+package codes.seanhenry.testhelpers;
 
 import com.intellij.ide.impl.ProjectUtil;
 import com.intellij.openapi.module.Module;
