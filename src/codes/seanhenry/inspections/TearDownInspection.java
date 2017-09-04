@@ -49,7 +49,7 @@ public class TearDownInspection extends LocalInspectionTool implements CleanupLo
       super.visitClassDeclaration(declaration);
     }
 
-    private int getNumberOfProblems(SwiftClassDeclaration declaration) {
+    private static int getNumberOfProblems(SwiftClassDeclaration declaration) {
       SwiftFunctionDeclaration tearDown = TearDownUtil.getTearDownMethod(declaration);
       List<String> variableNames = TearDownUtil.getWritableVariableNames(declaration);
       if (tearDown == null || tearDown.getCodeBlock() == null) {

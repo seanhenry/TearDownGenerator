@@ -2,7 +2,7 @@ import XCTest
 
 class <weak_warning descr="Not all properties are set to nil in the tear down.">SimpleTearDown<caret></weak_warning>: XCTestCase {
 
-    var optional: String?
+    var opt: String?
     let constantOptional: String? = ""
     var anotherOptional: String?
     var readOnlyOptional: String? {

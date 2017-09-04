@@ -2,7 +2,7 @@ import XCTest
 
 class SimpleTearDown: XCTestCase {
 
-    var optional: String?
+    var opt: String?
     let constantOptional: String? = ""
     var anotherOptional: String?
     var readOnlyOptional: String? {
@@ -28,8 +28,9 @@ class SimpleTearDown: XCTestCase {
         didSet {}
     }
     var multi: String?, line: String?, statement: String?
+
     override func tearDown() {
-        optional = nil
+        opt = nil
         anotherOptional = nil
         privateOptional = nil
         iuo = nil

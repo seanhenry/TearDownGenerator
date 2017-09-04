@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bfa5c71-35c8-4e11-9a85-73d88e7cf299" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppDelegate.swift" afterPath="$PROJECT_DIR$/AppDelegate.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../README.md" afterPath="$PROJECT_DIR$/../../README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,34 +16,14 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_C1EA074F-F91E-4125-9C94-6F7835BBAA34" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NilInAnotherMethod_expected.swift" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NilInAnotherMethod_expected.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/NilInAnotherMethod_expected.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NilInAnotherMethod.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NilInAnotherMethod.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NotAvailableNilInAnotherMethod.swift" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="735">
+              <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -88,7 +68,6 @@
         <option value="$PROJECT_DIR$/CaretInWhiteSpace_expected.swift" />
         <option value="$PROJECT_DIR$/CaretInClassDeclaration_expected.swift" />
         <option value="$PROJECT_DIR$/CaretAtEndOfClassDeclaration_expected.swift" />
-        <option value="$PROJECT_DIR$/SimpleTearDown_expected.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDown_expected.swift" />
         <option value="$PROJECT_DIR$/FaultyTearDown_expected.swift" />
         <option value="$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift" />
@@ -100,21 +79,22 @@
         <option value="$PROJECT_DIR$/ReplaceTearDown.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" />
-        <option value="$PROJECT_DIR$/SimpleTearDown.swift" />
         <option value="$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift" />
         <option value="$PROJECT_DIR$/PlaceTearDownAfterProperties.swift" />
         <option value="$PROJECT_DIR$/PlaceTearDownAfterSetUp.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownAfterSetUp_expected.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownAfterProperties_expected.swift" />
         <option value="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod_expected.swift" />
         <option value="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift" />
         <option value="$PROJECT_DIR$/FaultyTearDown.swift" />
         <option value="$PROJECT_DIR$/NotAvailableAllPropertiesAreSetToNil.swift" />
         <option value="$PROJECT_DIR$/AppDelegate.swift" />
         <option value="$PROJECT_DIR$/NilInAnotherMethod.swift" />
-        <option value="$PROJECT_DIR$/NilInAnotherMethod_expected.swift" />
         <option value="$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift" />
+        <option value="$PROJECT_DIR$/SimpleTearDown_expected.swift" />
+        <option value="$PROJECT_DIR$/SimpleTearDown.swift" />
+        <option value="$PROJECT_DIR$/PlaceTearDownAfterProperties_expected.swift" />
+        <option value="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod_expected.swift" />
+        <option value="$PROJECT_DIR$/PlaceTearDownAfterSetUp_expected.swift" />
+        <option value="$PROJECT_DIR$/NilInAnotherMethod_expected.swift" />
       </list>
     </option>
   </component>
@@ -438,11 +418,12 @@
       <workItem from="1497333444435" duration="1475000" />
       <workItem from="1498758289263" duration="5608000" />
       <workItem from="1499440210232" duration="2000" />
+      <workItem from="1504565866498" duration="781000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107793000" />
+    <option name="totallyTimeSpent" value="108574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
@@ -453,7 +434,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39444444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PsiViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39444444" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -471,6 +452,9 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -499,13 +483,6 @@
     <entry file="appcode.project-settings://41f615d0">
       <provider selected="true" editor-type-id="AppCode.ProjectSettings">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDownNoSuper_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CaretBetweenStatements_expected.swift" />
@@ -541,38 +518,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CaretInClassDeclaration_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="78" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterProperties.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterProperties_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterSetUp_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -590,24 +539,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -636,20 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FaultyTearDown_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FaultyTearDown.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -658,14 +579,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/NotAvailableNilInAnotherMethod_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/NilInAnotherMethod_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NilInAnotherMethod.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -678,6 +591,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="33" lean-forward="false" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FaultyTearDown_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDownNoSuper_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="5" lean-forward="false" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterSetUp_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="22" lean-forward="false" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterProperties_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NilInAnotherMethod_expected.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
           <folding />
         </state>
       </provider>

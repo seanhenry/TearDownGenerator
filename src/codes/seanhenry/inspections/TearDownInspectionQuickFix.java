@@ -107,7 +107,7 @@ public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
     addVariableNames(variableNames, codeBlock, superExpression);
   }
 
-  private PsiElement findSuperExpression(SwiftCodeBlock codeBlock) {
+  private static PsiElement findSuperExpression(SwiftCodeBlock codeBlock) {
     for (PsiElement element : codeBlock.getStatementList()) {
       if (element.getText().equals("super.tearDown()")) {
         return element;
