@@ -7,14 +7,14 @@ import org.junit.Assert;
 public class TearDownInspectionTest extends ImportProjectTestCase {
 
   @Override
-  protected void setUpProject() throws Exception {
-    super.setUpProject();
+  protected void setUp() throws Exception {
+    super.setUp();
     getFixture().enableInspections(new TearDownInspection());
   }
 
   @Override
   protected String getDataPath() {
-    return "/Users/sean/source/plugins/community/TearDown/testData/TestProject";
+    return "src/test/resources/TestProject";
   }
 
   @Override
@@ -74,7 +74,7 @@ public class TearDownInspectionTest extends ImportProjectTestCase {
     PsiFile targetFile = configureFile(fileName);
     getFixture().checkHighlighting(false, false, true, true);
     invokeIntention(TearDownInspectionQuickFix.NAME, targetFile);
-    getFixture().checkResultByFile(expectedFileName, true);
+    assertFilesEqual(expectedFileName, fileName);
   }
 
   private boolean runIsAvailableTest(String fileName) throws Exception {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146DD64920C2D415001D4281 /* PlaceTearDownAfterProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF00C289339F00851B5CB /* PlaceTearDownAfterProperties.swift */; };
 		14F5FC2C1EBF446D00442884 /* SimpleTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF88A3EC2C04D186B24BD /* SimpleTearDown.swift */; };
 		35CDF06D44F883D45A5B6D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF434C8CF2AC28EBA0449 /* LaunchScreen.storyboard */; };
 		35CDF083C033EFE1956DBF5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35CDFB629531500C3AF481FF /* Info.plist */; };
@@ -22,7 +23,6 @@
 		35CDF92A12A385BCE4642085 /* ReplaceTearDownNoSuper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF3F7BE751731AFF0ABA8 /* ReplaceTearDownNoSuper.swift */; };
 		35CDFA176923BF2384E6201D /* ReplaceTearDownClassMethodEdgeCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFE560A4CF80901C2FADD /* ReplaceTearDownClassMethodEdgeCase.swift */; };
 		35CDFCEA55877C5103C69A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF5E9615CB94E27438335 /* Main.storyboard */; };
-		35CDFE9ED0B9AB3B1C81E3D6 /* PlaceTearDownAfterProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF00C289339F00851B5CB /* PlaceTearDownAfterProperties.swift */; };
 		35CDFEC64BDE844E131B979D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF3913F0CE5933271C8B8 /* Assets.xcassets */; };
 		35CDFF86A8723C600FB2C521 /* FaultyTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDFEEF68292925C04D3ABE /* FaultyTearDown.swift */; };
 		35CDFF9D04C6F2D50CDC2B1B /* ReplaceTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF8C2ED6C3E87AC200787 /* ReplaceTearDown.swift */; };
@@ -250,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14F5FC2C1EBF446D00442884 /* SimpleTearDown.swift in Sources */,
+				146DD64920C2D415001D4281 /* PlaceTearDownAfterProperties.swift in Sources */,
 				35CDF2B34B94CFDADD0ADBD1 /* AvailableXCTestCaseSubclass.swift in Sources */,
 				35CDF10E20898DA5CD084E48 /* AvailableDeepXCTestCaseSubclass.swift in Sources */,
 				35CDF509185B2A8690888614 /* NotAvailableNoXCTestCaseSubclass.swift in Sources */,
@@ -267,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				35CDF209D142DEDBA2F4F098 /* AppDelegate.swift in Sources */,
-				35CDFE9ED0B9AB3B1C81E3D6 /* PlaceTearDownAfterProperties.swift in Sources */,
 				35CDF297FF9EA60491883D16 /* PlaceTearDownAfterSetUp.swift in Sources */,
 				35CDF163DE77C34D5DB40C24 /* PlaceTearDownBeforeFirstMethod.swift in Sources */,
 				35CDF4188CF7F92533997B5A /* NotAvailableAllPropertiesAreSetToNil.swift in Sources */,
@@ -316,7 +316,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codes.seanhenry.TestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestProject.app/TestProject";
 			};
 			name = Debug;
@@ -331,7 +330,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codes.seanhenry.TestProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestProject.app/TestProject";
 			};
 			name = Release;
@@ -382,6 +380,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -393,7 +392,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codes.seanhenry.MockGeneratorTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -435,6 +433,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -447,7 +446,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codes.seanhenry.MockGeneratorTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -461,6 +459,7 @@
 				14F5FC2B1EBF439F00442884 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		35CDF8C575F647D720962935 /* Build configuration list for PBXProject "TestProject" */ = {
 			isa = XCConfigurationList;

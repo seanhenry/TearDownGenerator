@@ -6,6 +6,7 @@ import com.jetbrains.swift.psi.SwiftReferenceTypeElement;
 import com.jetbrains.swift.psi.SwiftTypeInheritanceClause;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MySwiftPsiUtil {
 
@@ -18,7 +19,11 @@ public class MySwiftPsiUtil {
     if (clause == null) {
       return false;
     }
-    List<SwiftReferenceTypeElement> elements = clause.getReferenceTypeElementList();
+    List<SwiftReferenceTypeElement> elements = clause.getTypeElementList()
+            .stream()
+            .filter(e -> e instanceof SwiftReferenceTypeElement)
+            .map(e -> (SwiftReferenceTypeElement) e)
+            .collect(Collectors.toList());
     if (elements.size() == 0) {
       return false;
     }

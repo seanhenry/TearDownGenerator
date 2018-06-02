@@ -6,6 +6,7 @@ import com.intellij.codeInspection.*;
 import com.intellij.psi.PsiElementVisitor;
 import com.intellij.psi.PsiFile;
 import com.jetbrains.swift.psi.*;
+import org.jetbrains.annotations.Nls;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -29,6 +30,13 @@ public class TearDownInspection extends LocalInspectionTool implements CleanupLo
       return super.checkFile(file, manager, isOnTheFly);
     }
     return new ProblemDescriptor[0];
+  }
+
+  @Nls
+  @NotNull
+  @Override
+  public String getDisplayName() {
+    return "Tear Down";
   }
 
   private static class TearDownClassVisitor extends SwiftVisitor {
