@@ -18,7 +18,7 @@ public class TearDownInspectionTest extends ImportProjectTestCase {
 
   private void setTrackerSpy() {
     trackerSpy = new TrackerSpy();
-    TearDownInspection.tracker = trackerSpy;
+    TearDownInspectionQuickFix.tracker = trackerSpy;
   }
 
   @Override
