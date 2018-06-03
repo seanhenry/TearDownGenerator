@@ -1,31 +1,17 @@
 import XCTest
 
-protocol AProtocol: class {
-    var alreadyNilledInProtocolExtension: String? { get set }
-    func setToNilInProtocolExtension()
-}
-
-extension AProtocol where Self: XCTestCase {
-
-    func setToNilInProtocolExtension() {
-        alreadyNilledInProtocolExtension = nil
-    }
-}
-
-class NilInAnotherMethod: XCTestCase, AProtocol {
+class NilInAnotherMethod: XCTestCase {
 
     var nilledOutsideTearDown: String?
     var nilledInTheTearDown: String?
     var alreadyNilledInMethod: String?
     var alreadyNilledInExtension: String?
-    var alreadyNilledInProtocolExtension: String?
     var alreadyNilledInSelfMethod: String?
 
     override func tearDown() {
 
         setToNil()
         setToNilInExtension()
-        setToNilInProtocolExtension()
         self.setToNilUsingSelf()
         nilledInTheTearDown = nil
         nilledOutsideTearDown = nil
