@@ -1,5 +1,7 @@
 package codes.seanhenry.inspections;
 
+import codes.seanhenry.analytics.GoogleAnalyticsTracker;
+import codes.seanhenry.analytics.Tracker;
 import codes.seanhenry.util.MySwiftPsiUtil;
 import codes.seanhenry.util.TearDownUtil;
 import com.intellij.codeInspection.*;
@@ -15,11 +17,13 @@ import java.util.Objects;
 
 public class TearDownInspection extends LocalInspectionTool implements CleanupLocalInspectionTool {
 
+  public static Tracker tracker = new GoogleAnalyticsTracker();
   private static final String DESCRIPTION = "Not all properties are set to nil in the tear down.";
 
   @NotNull
   @Override
   public PsiElementVisitor buildVisitor(@NotNull ProblemsHolder holder, boolean isOnTheFly) {
+    tracker.track("inspection", "teardown", "0");
     return new TearDownClassVisitor(holder);
   }
 

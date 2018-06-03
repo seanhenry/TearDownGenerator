@@ -1,15 +1,24 @@
 package codes.seanhenry.inspections;
 
+import codes.seanhenry.analytics.TrackerSpy;
 import codes.seanhenry.testhelpers.ImportProjectTestCase;
 import com.intellij.psi.PsiFile;
 import org.junit.Assert;
 
 public class TearDownInspectionTest extends ImportProjectTestCase {
 
+  private TrackerSpy trackerSpy;
+
   @Override
   protected void setUp() throws Exception {
     super.setUp();
+    setTrackerSpy();
     getFixture().enableInspections(new TearDownInspection());
+  }
+
+  private void setTrackerSpy() {
+    trackerSpy = new TrackerSpy();
+    TearDownInspection.tracker = trackerSpy;
   }
 
   @Override
@@ -26,6 +35,16 @@ public class TearDownInspectionTest extends ImportProjectTestCase {
     runAvailableTests();
     runUnavailableTests();
     runInvokeTests();
+    runTrackerTests();
+  }
+
+  private void runTrackerTests() throws Exception {
+    setTrackerSpy();
+    runTest("TrackerTearDown");
+    assertEquals(1, trackerSpy.invocationCount);
+    assertEquals("inspection", trackerSpy.invokedCategory);
+    assertEquals("teardown", trackerSpy.invokedAction);
+    assertEquals("0", trackerSpy.invokedValue);
   }
 
   private void runAvailableTests() throws Exception {

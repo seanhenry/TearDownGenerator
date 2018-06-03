@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>codes.seanhenry.teardown</id>
   <name>Swift Test Tear Down Inspection for AppCode</name>
-  <version>2</version>
+  <version>3</version>
   <vendor email="hello@seanhenry.codes" url="http://www.seanhenry.codes">Sean Henry</vendor>
 
   <description><![CDATA[
@@ -18,7 +18,7 @@
     ]]></description>
 
   <change-notes><![CDATA[
-  Analyses methods called by the tear down for properties that are already set to nil.
+  Fixes breaking API change in AppCode 2018.2+
     ]]>
   </change-notes>
 

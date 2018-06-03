@@ -12,6 +12,7 @@
 		35CDF06D44F883D45A5B6D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF434C8CF2AC28EBA0449 /* LaunchScreen.storyboard */; };
 		35CDF083C033EFE1956DBF5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35CDFB629531500C3AF481FF /* Info.plist */; };
 		35CDF10E20898DA5CD084E48 /* AvailableDeepXCTestCaseSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF54E00597A6E4F7C3002 /* AvailableDeepXCTestCaseSubclass.swift */; };
+		35CDF15565D126C194D31D9B /* TrackerTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF0222BD89C74E3603AD0 /* TrackerTearDown.swift */; };
 		35CDF163DE77C34D5DB40C24 /* PlaceTearDownBeforeFirstMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF84C3A587AA54AEEAF0D /* PlaceTearDownBeforeFirstMethod.swift */; };
 		35CDF209D142DEDBA2F4F098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF7810EE85C405F75C589 /* AppDelegate.swift */; };
 		35CDF297FF9EA60491883D16 /* PlaceTearDownAfterSetUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF113D7BFF34C5B41323B /* PlaceTearDownAfterSetUp.swift */; };
@@ -43,11 +44,13 @@
 		14F5FC261EBF439F00442884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35CDF005D869C31B4C4CDBDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35CDF00C289339F00851B5CB /* PlaceTearDownAfterProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTearDownAfterProperties.swift; sourceTree = "<group>"; };
+		35CDF0222BD89C74E3603AD0 /* TrackerTearDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerTearDown.swift; sourceTree = "<group>"; };
 		35CDF071EB7B242BDE330FA4 /* PlaceTearDownAfterSetUp_expected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTearDownAfterSetUp_expected.swift; sourceTree = "<group>"; };
 		35CDF113D7BFF34C5B41323B /* PlaceTearDownAfterSetUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTearDownAfterSetUp.swift; sourceTree = "<group>"; };
 		35CDF17471924D0FAA212E17 /* ReplaceTearDownNoSuper_expected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceTearDownNoSuper_expected.swift; sourceTree = "<group>"; };
 		35CDF1C8EAA0DC332B941BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35CDF1FDF04B9B539567FE3E /* NotAvailableNilInAnotherMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotAvailableNilInAnotherMethod.swift; sourceTree = "<group>"; };
+		35CDF22FD860090BA312E46F /* TrackerTearDown_expected.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackerTearDown_expected.swift; sourceTree = "<group>"; };
 		35CDF3913F0CE5933271C8B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resources/Assets.xcassets; sourceTree = "<group>"; };
 		35CDF3F7BE751731AFF0ABA8 /* ReplaceTearDownNoSuper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReplaceTearDownNoSuper.swift; sourceTree = "<group>"; };
 		35CDF42C0E0D563C7AB46859 /* NotAvailableAllPropertiesAreSetToNil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotAvailableAllPropertiesAreSetToNil.swift; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				35CDF6919CE62DCF2B6845FC /* NilInAnotherMethod.swift */,
 				35CDF7D1A08CF2B8E08FE114 /* NilInAnotherMethod_expected.swift */,
 				35CDF1FDF04B9B539567FE3E /* NotAvailableNilInAnotherMethod.swift */,
+				35CDF0222BD89C74E3603AD0 /* TrackerTearDown.swift */,
+				35CDF22FD860090BA312E46F /* TrackerTearDown_expected.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -260,6 +265,7 @@
 				35CDFF86A8723C600FB2C521 /* FaultyTearDown.swift in Sources */,
 				35CDF802CACCC484CBB63B4C /* NilInAnotherMethod.swift in Sources */,
 				35CDF776EA66C6E4DBAF1C0E /* NotAvailableNilInAnotherMethod.swift in Sources */,
+				35CDF15565D126C194D31D9B /* TrackerTearDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
