@@ -15,7 +15,7 @@ import java.util.Objects;
 
 public class TearDownInspection extends LocalInspectionTool implements CleanupLocalInspectionTool {
 
-  public static final String DESCRIPTION = "Not all properties are set to nil in the tear down.";
+  private static final String DESCRIPTION = "Not all properties are set to nil in the tear down.";
 
   @NotNull
   @Override
