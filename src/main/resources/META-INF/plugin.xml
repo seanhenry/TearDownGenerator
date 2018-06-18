@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>codes.seanhenry.teardown</id>
   <name>Swift Test Tear Down Inspection for AppCode</name>
-  <version>3</version>
+  <version>3.1</version>
   <vendor email="hello@seanhenry.codes" url="http://www.seanhenry.codes">Sean Henry</vendor>
 
   <description><![CDATA[
