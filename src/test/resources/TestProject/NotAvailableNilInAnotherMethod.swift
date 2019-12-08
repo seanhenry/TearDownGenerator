@@ -33,3 +33,14 @@ extension NotAvailableNilInAnotherMethod {
         alreadyNilledInExtension = nil
     }
 }
+
+protocol AProtocol: AnyObject {
+    var alreadyNilledInProtocolExtension: String? { set get }
+
+}
+
+extension AProtocol {
+    func setToNilInProtocolExtension() {
+        alreadyNilledInProtocolExtension = nil
+    }
+}

@@ -13,7 +13,7 @@
       <excludeFolder url="file://$MODULE_DIR$/community" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="AppCode OC-182.2757.9" jdkType="IDEA JDK" />
+    <orderEntry type="jdk" jdkName="AppCode OC-193.5233.118" jdkType="IDEA JDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" scope="TEST">
       <library name="Test Framework Classes">

@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>codes.seanhenry.teardown</id>
   <name>Swift Test Tear Down Inspection for AppCode</name>
-  <version>3.1</version>
+  <version>3.2</version>
   <vendor email="hello@seanhenry.codes" url="http://www.seanhenry.codes">Sean Henry</vendor>
 
   <description><![CDATA[
@@ -18,12 +18,12 @@
     ]]></description>
 
   <change-notes><![CDATA[
-  Fixes breaking API change in AppCode 2018.2+
+  Fixes breaking API change in AppCode 2019.3
     ]]>
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="181.5451"/>
+  <idea-version since-build="193"/>
 
   <actions>
   </actions>

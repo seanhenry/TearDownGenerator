@@ -15,7 +15,7 @@ public class TearDownUtil {
 
   public static List<String> getWritableVariableNames(SwiftClassDeclaration classDeclaration) {
 
-    return classDeclaration.getStatementList().stream()
+    return classDeclaration.getDeclarations().stream()
       .filter(s -> s instanceof SwiftVariableDeclaration)
       .map(s -> (SwiftVariableDeclaration) s)
       .filter(v -> !v.isConstant())
@@ -29,7 +29,7 @@ public class TearDownUtil {
   }
 
   public static List<String> removeExistingNilledVariables(List<String> variableNames, SwiftCodeBlock codeBlock) {
-    List<SwiftStatement> statements = codeBlock.getStatementList();
+    List<SwiftStatement> statements = codeBlock.getStatements();
     Set<String> nilledProperties = getNilledPropertyNames(statements);
     Set<String> resolvedNilledProperties = getResolvedNilledPropertyNames(statements);
     nilledProperties.addAll(resolvedNilledProperties);
@@ -49,7 +49,7 @@ public class TearDownUtil {
       .map(e -> (SwiftFunctionDeclaration) e)
       .filter(f -> f.getCodeBlock() != null)
       .map(SwiftFunctionDeclaration::getCodeBlock)
-      .flatMap(b -> getNilledPropertyNames(b.getStatementList()).stream())
+      .flatMap(b -> getNilledPropertyNames(b.getStatements()).stream())
       .collect(Collectors.toSet());
   }
 
@@ -75,9 +75,9 @@ public class TearDownUtil {
   }
 
   public static SwiftFunctionDeclaration getTearDownMethod(SwiftClassDeclaration classDeclaration) {
-    for (PsiElement statement : classDeclaration.getStatementList()) {
-      if (statement instanceof SwiftFunctionDeclaration) {
-        SwiftFunctionDeclaration function = (SwiftFunctionDeclaration)statement;
+    for (SwiftMemberDeclaration declaration : classDeclaration.getDeclarations()) {
+      if (declaration instanceof SwiftFunctionDeclaration) {
+        SwiftFunctionDeclaration function = (SwiftFunctionDeclaration)declaration;
         if ("tearDown".equals(function.getName()) && !function.isStatic()) {
           return function;
         }

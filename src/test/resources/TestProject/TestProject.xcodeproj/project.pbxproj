@@ -10,7 +10,6 @@
 		146DD64920C2D415001D4281 /* PlaceTearDownAfterProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF00C289339F00851B5CB /* PlaceTearDownAfterProperties.swift */; };
 		14F5FC2C1EBF446D00442884 /* SimpleTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF88A3EC2C04D186B24BD /* SimpleTearDown.swift */; };
 		35CDF06D44F883D45A5B6D80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35CDF434C8CF2AC28EBA0449 /* LaunchScreen.storyboard */; };
-		35CDF083C033EFE1956DBF5B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35CDFB629531500C3AF481FF /* Info.plist */; };
 		35CDF10E20898DA5CD084E48 /* AvailableDeepXCTestCaseSubclass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF54E00597A6E4F7C3002 /* AvailableDeepXCTestCaseSubclass.swift */; };
 		35CDF15565D126C194D31D9B /* TrackerTearDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF0222BD89C74E3603AD0 /* TrackerTearDown.swift */; };
 		35CDF163DE77C34D5DB40C24 /* PlaceTearDownBeforeFirstMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CDF84C3A587AA54AEEAF0D /* PlaceTearDownBeforeFirstMethod.swift */; };
@@ -215,7 +214,9 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
+				Base,
 			);
 			mainGroup = 35CDFBF1DFE39890B6E393A0;
 			productRefGroup = 35CDF06CB3213CCC22CA7148 /* Products */;
@@ -240,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CDF083C033EFE1956DBF5B /* Info.plist in Resources */,
 				35CDFEC64BDE844E131B979D /* Assets.xcassets in Resources */,
 				35CDF06D44F883D45A5B6D80 /* LaunchScreen.storyboard in Resources */,
 				35CDFCEA55877C5103C69A62 /* Main.storyboard in Resources */,

@@ -55,8 +55,8 @@ public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
 
   private void createTearDown(List<String> variableNames) {
     SetUpMethodVisitor visitor = new SetUpMethodVisitor();
-    for (SwiftStatement statement : getClassDeclaration().getStatementList()) {
-      statement.accept(visitor);
+    for (SwiftMemberDeclaration declaration : getClassDeclaration().getDeclarations()) {
+      declaration.accept(visitor);
     }
     SwiftFunctionDeclaration tearDown = elementFactory
       .createFunction("override func tearDown() { " + NEWLINE +
@@ -108,11 +108,11 @@ public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
       return;
     }
     variableNames = TearDownUtil.removeExistingNilledVariables(variableNames, codeBlock);
-    addVariableNames(variableNames, codeBlock, superExpression);
+    addVariableNames(variableNames, codeBlock);
   }
 
   private static PsiElement findSuperExpression(SwiftCodeBlock codeBlock) {
-    for (PsiElement element : codeBlock.getStatementList()) {
+    for (SwiftStatement element : codeBlock.getStatements()) {
       if (element.getText().equals("super.tearDown()")) {
         return element;
       }
@@ -123,17 +123,25 @@ public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
   private void addSuperCall(SwiftCodeBlock codeBlock) {
     PsiElement superExpression;
     superExpression = elementFactory.createExpression("super.tearDown()", null);
-    codeBlock.addBefore(superExpression, codeBlock.getLastChild());
+    addStatementToCodeBlock(superExpression, codeBlock);
   }
 
-  private void addVariableNames(List<String> variableNames, SwiftCodeBlock codeBlock, PsiElement superExpression) {
+  private void addVariableNames(List<String> variableNames, SwiftCodeBlock codeBlock) {
     for (String name : variableNames) {
       SwiftExpression expression = elementFactory.createExpression(name + " = nil", null);
-      codeBlock.addBefore(expression, superExpression);
+      addStatementToCodeBlock(expression, codeBlock);
     }
   }
 
   private SwiftClassDeclaration getClassDeclaration() {
     return (SwiftClassDeclaration)getStartElement();
+  }
+
+  private void addStatementToCodeBlock(PsiElement statement, SwiftCodeBlock codeBlock) {
+    if (codeBlock.getStatements().isEmpty()) {
+      codeBlock.addBefore(statement, codeBlock.getLastChild());
+    } else {
+      codeBlock.addStatementAfter(statement, codeBlock.getStatements().get(codeBlock.getStatements().size() - 1));
+    }
   }
 }

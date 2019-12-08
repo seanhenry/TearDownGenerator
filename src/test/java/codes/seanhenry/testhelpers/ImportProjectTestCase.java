@@ -49,8 +49,8 @@ public abstract class ImportProjectTestCase extends UsefulTestCase {
   }
 
   private void initApplication() throws Exception {
-     IdeaTestApplication.getInstance(null);
-        ((PersistentFSImpl)PersistentFS.getInstance()).cleanPersistedContents();
+//     IdeaTestApplication.getInstance(null);
+//        ((PersistentFSImpl)PersistentFS.getInstance()).cleanPersistedContents();
   }
 
   private void allowAccessToXcodeDirectory() throws IOException {

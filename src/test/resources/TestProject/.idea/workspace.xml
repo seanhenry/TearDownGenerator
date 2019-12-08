@@ -2,11 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bfa5c71-35c8-4e11-9a85-73d88e7cf299" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../TearDown.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../TearDown.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/inspections/TearDownInspectionQuickFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/inspections/TearDownInspectionQuickFix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AppDelegate.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AppDelegate.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FaultyTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/FaultyTearDown.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FaultyTearDown_expected.swift" beforeDir="false" afterPath="$PROJECT_DIR$/FaultyTearDown_expected.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NilInAnotherMethod.swift" beforeDir="false" afterPath="$PROJECT_DIR$/NilInAnotherMethod.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift" beforeDir="false" afterPath="$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaceTearDownAfterProperties.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlaceTearDownAfterProperties.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaceTearDownAfterSetUp.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlaceTearDownAfterSetUp.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReplaceTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ReplaceTearDown.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleTearDown.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestProject.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TrackerTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TrackerTearDown.swift" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,137 +36,9 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_" />
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NilInAnotherMethod_expected.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TrackerTearDown.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TrackerTearDown_expected.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="43" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="1" lean-forward="true" selection-end-line="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>)))</find>
-      <find>invoked</find>
-      <find>privateOptional</find>
-    </findStrings>
-  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphonesimulator_A9884260-11DF-45A7-BFDB-F4E81E09C1C9" />
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/PropertyProtocol.swift" />
-        <option value="$PROJECT_DIR$/PropertyProtocolMock_expected.swift" />
-        <option value="$PROJECT_DIR$/RecursiveProtocol.swift" />
-        <option value="$PROJECT_DIR$/RecursiveProtocolMock.swift" />
-        <option value="$PROJECT_DIR$/RecursiveProtocolMock_expected.swift" />
-        <option value="$PROJECT_DIR$/MultipleProtocolMock_expected.swift" />
-        <option value="$PROJECT_DIR$/DiamondInheritanceProtocolMock_expected.swift" />
-        <option value="$PROJECT_DIR$/UIKitProtocol.swift" />
-        <option value="$PROJECT_DIR$/UIKitProtocolMock_expected.swift" />
-        <option value="$PROJECT_DIR$/UIKitProtocolMock.swift" />
-        <option value="$PROJECT_DIR$/PublicProtocolMock.swift" />
-        <option value="$PROJECT_DIR$/PublicProtocol.swift" />
-        <option value="$PROJECT_DIR$/PublicProtocolMock_expected.swift" />
-        <option value="$PROJECT_DIR$/AssociatedTypeProtocolMock.swift" />
-        <option value="$PROJECT_DIR$/ReplaceTearDownNoSuper_expected.swift" />
-        <option value="$PROJECT_DIR$/AvailableCaretInClassDeclaration.swift" />
-        <option value="$PROJECT_DIR$/CaretInStatment.swift" />
-        <option value="$PROJECT_DIR$/CaretInStatment_expected.swift" />
-        <option value="$PROJECT_DIR$/CaretInWhiteSpace.swift" />
-        <option value="$PROJECT_DIR$/CaretInWhiteSpace_expected.swift" />
-        <option value="$PROJECT_DIR$/CaretInClassDeclaration_expected.swift" />
-        <option value="$PROJECT_DIR$/CaretAtEndOfClassDeclaration_expected.swift" />
-        <option value="$PROJECT_DIR$/ReplaceTearDown_expected.swift" />
-        <option value="$PROJECT_DIR$/FaultyTearDown_expected.swift" />
-        <option value="$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift" />
-        <option value="$PROJECT_DIR$/CaretAtEndOfClassDeclaration.swift" />
-        <option value="$PROJECT_DIR$/CaretBetweenStatements.swift" />
-        <option value="$PROJECT_DIR$/CaretInStatement.swift" />
-        <option value="$PROJECT_DIR$/CaretInClassDeclaration.swift" />
-        <option value="$PROJECT_DIR$/NotAvailableNoXCTestCaseSubclass.swift" />
-        <option value="$PROJECT_DIR$/ReplaceTearDown.swift" />
-        <option value="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift" />
-        <option value="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownAfterProperties.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownAfterSetUp.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod.swift" />
-        <option value="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift" />
-        <option value="$PROJECT_DIR$/FaultyTearDown.swift" />
-        <option value="$PROJECT_DIR$/NotAvailableAllPropertiesAreSetToNil.swift" />
-        <option value="$PROJECT_DIR$/AppDelegate.swift" />
-        <option value="$PROJECT_DIR$/NilInAnotherMethod.swift" />
-        <option value="$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift" />
-        <option value="$PROJECT_DIR$/SimpleTearDown_expected.swift" />
-        <option value="$PROJECT_DIR$/SimpleTearDown.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownAfterProperties_expected.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod_expected.swift" />
-        <option value="$PROJECT_DIR$/PlaceTearDownAfterSetUp_expected.swift" />
-        <option value="$PROJECT_DIR$/NilInAnotherMethod_expected.swift" />
-        <option value="$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift" />
-        <option value="$PROJECT_DIR$/TrackerTearDown.swift" />
-        <option value="$PROJECT_DIR$/TrackerTearDown_expected.swift" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" fullScreen="true">
@@ -153,80 +46,15 @@
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Assignment issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Bitwise operation issuesJavaScript</id>
-          </State>
-          <State>
-            <id>C/C++</id>
-          </State>
-          <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Control flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Data flow issuesJavaScript</id>
-          </State>
-          <State>
-            <id>Error handlingJavaScript</id>
-          </State>
-          <State>
-            <id>GeneralC/C++</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsJavaScript</id>
-          </State>
-          <State>
-            <id>Probable bugsJavaScript</id>
-          </State>
-          <State>
-            <id>XPath</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>OCLoopDoesntUseConditionVariableInspection</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
+  <component name="ProjectId" id="1Uhsc2yuP6mUb0syWfaVP8I5XiU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="TestProject" type="1d218c8b:XcodeProjectNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Cidr.FilesView" />
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
@@ -238,7 +66,7 @@
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PsiViewer.ProjectComponent">
     <option name="HIGHLIGHT" value="false" />
@@ -248,43 +76,33 @@
     <option name="AUTOSCROLL_TO_SOURCE" value="true" />
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.TestProject">
-    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" RUN_TARGET_PROJECT_NAME="MockGeneratorTest" RUN_TARGET_NAME="MockGeneratorTest" MAKE_ACTIVE="TRUE">
+  <component name="RunManager" selected="XCTest.TestProjectTests">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="MockGeneratorTest" RUN_TARGET_NAME="MockGeneratorTest" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
+      <embedded_app_extension_list />
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestProjectTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestProject" TARGET_NAME="TestProjectTests" CONFIG_NAME="Debug" SCHEME_NAME="TestProjectTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProjectTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestProject" TARGET_NAME="TestProjectTests" CONFIG_NAME="Debug" SCHEME_NAME="TestProjectTests" IS_LOCATION_SIMULATION_ALLOWED="true" TEST_MODE="SUITE_TEST" XCODE_SKIPPED_TESTS_HASH_CODE="0">
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTestTests" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTestTests" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" TEST_MODE="SUITE_TEST">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+    <configuration default="true" type="js.build_tools.gulp">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <gulpfile />
@@ -297,6 +115,18 @@
       <item itemvalue="Application.TestProject" />
       <item itemvalue="XCTest.TestProjectTests" />
     </list>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -439,268 +269,34 @@
       <workItem from="1504565866498" duration="857000" />
       <workItem from="1527947169097" duration="21000" />
       <workItem from="1528016439606" duration="235000" />
+      <workItem from="1575820238432" duration="260000" />
+      <workItem from="1575821693819" duration="529000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108906000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" visible="true" weight="0.329602" />
-      <window_info anchor="bottom" id="Run Dashboard" order="11" />
-      <window_info anchor="bottom" id="Inspection Results" order="12" visible="true" weight="0.329602" />
-      <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="PsiViewer" order="3" weight="0.39444444" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Database" order="5" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/RecursiveProtocolMock_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/MultipleProtocolMock.swift" />
-    <entry file="file://$PROJECT_DIR$/MultipleProtocolMock_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/PropertyProtocolMock_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/PropertyProtocolMock.swift" />
-    <entry file="file://$PROJECT_DIR$/PropertyProtocol.swift" />
-    <entry file="file://$PROJECT_DIR$/OverloadProtocolMock_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/UIKitProtocol.swift" />
-    <entry file="file://$PROJECT_DIR$/UIKitProtocolMock_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/UIKitProtocolMock.swift" />
-    <entry file="file://$PROJECT_DIR$/PublicProtocolMock.swift" />
-    <entry file="file://$PROJECT_DIR$/PublicProtocolMock_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/PublicProtocol.swift" />
-    <entry file="file://$PROJECT_DIR$/AssociatedTypeProtocolMock.swift" />
-    <entry file="appcode.project-settings://41f615d0">
-      <provider selected="true" editor-type-id="AppCode.ProjectSettings" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaretBetweenStatements_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/CaretAtEndOfClassDeclaration_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/CaretInStatement_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/CaretBetweenStatements.swift" />
-    <entry file="file://$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDown.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDownNoSuper.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NotAvailableNoXCTestCaseSubclass.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaretInClassDeclaration_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterProperties.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterSetUp.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CaretInStatement.swift" />
-    <entry file="file://$PROJECT_DIR$/CaretInClassDeclaration.swift" />
-    <entry file="file://$PROJECT_DIR$/CaretAtEndOfClassDeclaration.swift" />
-    <entry file="file://$PROJECT_DIR$/NotAvailableAllPropertiesAreSetToNil_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/NotAvailableAllPropertiesAreSetToNil.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FaultyTearDown.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="80" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NotAvailableNilInAnotherMethod_expected.swift" />
-    <entry file="file://$PROJECT_DIR$/NilInAnotherMethod.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FaultyTearDown_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDownNoSuper_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReplaceTearDown_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterSetUp_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PlaceTearDownAfterProperties_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NilInAnotherMethod_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleTearDown.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="1" lean-forward="true" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrackerTearDown.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SimpleTearDown_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="57" lean-forward="true" selection-start-line="29" selection-start-column="57" selection-end-line="43" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TrackerTearDown_expected.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="583" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1575820312875">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="583" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.1027@0.23.1680.1027" timestamp="1575820312875" />
+    <state x="341" y="175" key="SettingsEditor" timestamp="1575820752218">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1575820752218" />
+    <state x="510" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1575821694267">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="510" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575821694267" />
+    <state x="490" y="179" width="856" height="714" key="find.popup" timestamp="1575822053818">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="490" y="179" width="856" height="714" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575822053818" />
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1575822228411">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575822228411" />
   </component>
 </project>
