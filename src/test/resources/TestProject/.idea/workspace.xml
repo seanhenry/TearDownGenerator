@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bfa5c71-35c8-4e11-9a85-73d88e7cf299" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../TearDown.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../TearDown.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/inspections/TearDownInspectionQuickFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/inspections/TearDownInspectionQuickFix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AvailableDeepXCTestCaseSubclass.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift" beforeDir="false" afterPath="$PROJECT_DIR$/AvailableXCTestCaseSubclass.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FaultyTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/FaultyTearDown.swift" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FaultyTearDown_expected.swift" beforeDir="false" afterPath="$PROJECT_DIR$/FaultyTearDown_expected.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NilInAnotherMethod.swift" beforeDir="false" afterPath="$PROJECT_DIR$/NilInAnotherMethod.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift" beforeDir="false" afterPath="$PROJECT_DIR$/NotAvailableNilInAnotherMethod.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlaceTearDownAfterProperties.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlaceTearDownAfterProperties.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlaceTearDownAfterSetUp.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlaceTearDownAfterSetUp.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod.swift" beforeDir="false" afterPath="$PROJECT_DIR$/PlaceTearDownBeforeFirstMethod.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReplaceTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ReplaceTearDown.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ReplaceTearDownClassMethodEdgeCase.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" beforeDir="false" afterPath="$PROJECT_DIR$/ReplaceTearDownNoSuper.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleTearDown.swift" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestProject.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/TestProject.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TrackerTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/TrackerTearDown.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/TestProject.xcodeproj" />
@@ -271,6 +250,8 @@
       <workItem from="1528016439606" duration="235000" />
       <workItem from="1575820238432" duration="260000" />
       <workItem from="1575821693819" duration="529000" />
+      <workItem from="1584982133342" duration="44000" />
+      <workItem from="1584982507553" duration="10000" />
     </task>
     <servers />
   </component>
@@ -278,25 +259,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="583" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1575820312875">
+    <state x="510" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1584982152975">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="583" y="399" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.1680.1027@0.23.1680.1027" timestamp="1575820312875" />
-    <state x="341" y="175" key="SettingsEditor" timestamp="1575820752218">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1575820752218" />
-    <state x="510" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1575821694267">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="510" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1575821694267" />
-    <state x="490" y="179" width="856" height="714" key="find.popup" timestamp="1575822053818">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="490" y="179" width="856" height="714" key="find.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575822053818" />
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup" timestamp="1575822228411">
-      <screen x="0" y="23" width="1680" height="1027" />
-    </state>
-    <state x="505" y="260" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1575822228411" />
+    <state x="510" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584982152975" />
   </component>
 </project>
