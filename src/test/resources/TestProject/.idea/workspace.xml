@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8bfa5c71-35c8-4e11-9a85-73d88e7cf299" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../../../TearDown.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../TearDown.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestFixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestFixture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FaultyTearDown_expected.swift" beforeDir="false" afterPath="$PROJECT_DIR$/FaultyTearDown_expected.swift" afterDir="false" />
     </list>
@@ -28,22 +30,26 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="OBJC.PRESERVED_TARGET_SELECTION" value="" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/TestProject.xcodeproj" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.jscs" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -56,7 +62,7 @@
     <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
   </component>
   <component name="RunManager" selected="XCTest.TestProjectTests">
-    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="MockGeneratorTest" RUN_TARGET_NAME="MockGeneratorTest" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" RUN_TARGET_PROJECT_NAME="MockGeneratorTest" RUN_TARGET_NAME="MockGeneratorTest" MAKE_ACTIVE="TRUE" SHOULD_DEBUG_EXTENSIONS="false">
       <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
         <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
       </EXTENSION>
@@ -65,18 +71,18 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="OCGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTest" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestProjectTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestProject" TARGET_NAME="TestProjectTests" CONFIG_NAME="Debug" SCHEME_NAME="TestProjectTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
+    <configuration name="TestProjectTests" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TestProject" TARGET_NAME="TestProjectTests" CONFIG_NAME="Debug" SCHEME_NAME="TestProjectTests" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST" XCODE_TESTS_HASH_CODE="0">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTestTests" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
+    <configuration default="true" type="OCUnitRunConfiguration" factoryName="XCTest/Kiwi" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="MockGeneratorTest" TARGET_NAME="MockGeneratorTestTests" CONFIG_NAME="Debug" IS_LOCATION_SIMULATION_ALLOWED="true" APPLICATION_LANGUAGE="IDELaunchSchemeLanguageUseSystemLanguage" APPLICATION_REGION="" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -94,18 +100,6 @@
       <item itemvalue="Application.TestProject" />
       <item itemvalue="XCTest.TestProjectTests" />
     </list>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -252,16 +246,20 @@
       <workItem from="1575821693819" duration="529000" />
       <workItem from="1584982133342" duration="44000" />
       <workItem from="1584982507553" duration="10000" />
+      <workItem from="1584982956775" duration="327000" />
+      <workItem from="1584984894358" duration="1782000" />
+      <workItem from="1585042654679" duration="15000" />
+      <workItem from="1585043000987" duration="65000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="510" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1584982152975">
+    <state x="510" y="369" key="com.intellij.ide.util.TipDialog" timestamp="1584982957672">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="510" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584982152975" />
+    <state x="510" y="369" key="com.intellij.ide.util.TipDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1584982957672" />
   </component>
 </project>
