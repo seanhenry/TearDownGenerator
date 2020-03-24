@@ -28,4 +28,5 @@ class <weak_warning descr="Not all properties are set to nil in the tear down.">
         didSet {}
     }
     var multi: String?, line: String?, statement: String?
+    static var staticVar: String?
 }

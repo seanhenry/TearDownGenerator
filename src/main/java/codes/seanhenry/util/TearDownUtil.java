@@ -18,6 +18,7 @@ public class TearDownUtil {
       .filter(s -> s instanceof SwiftVariableDeclaration)
       .map(s -> (SwiftVariableDeclaration) s)
       .filter(v -> !v.isConstant())
+      .filter(TearDownUtil::isInstance)
       .flatMap(v -> v.getPatternInitializerList().stream())
       .filter(TearDownUtil::isNilable)
       .filter(TearDownUtil::isWritable)
@@ -82,5 +83,9 @@ public class TearDownUtil {
     } else {
       return true;
     }
+  }
+
+  private static boolean isInstance(SwiftVariableDeclaration declaration) {
+    return !declaration.isStatic();
   }
 }

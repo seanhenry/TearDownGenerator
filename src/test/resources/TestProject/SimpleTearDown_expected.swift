@@ -28,6 +28,7 @@ class SimpleTearDown: XCTestCase {
         didSet {}
     }
     var multi: String?, line: String?, statement: String?
+    static var staticVar: String?
 
     override func tearDown() {
         opt = nil

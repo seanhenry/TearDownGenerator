@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bfa5c71-35c8-4e11-9a85-73d88e7cf299" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../TearDown.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../TearDown.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../main/java/codes/seanhenry/util/TearDownUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestFixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../java/codes/seanhenry/testhelpers/ImportProjectTestFixture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FaultyTearDown_expected.swift" beforeDir="false" afterPath="$PROJECT_DIR$/FaultyTearDown_expected.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleTearDown.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleTearDown.swift" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SimpleTearDown_expected.swift" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleTearDown_expected.swift" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,6 +249,9 @@
       <workItem from="1584984894358" duration="1782000" />
       <workItem from="1585042654679" duration="15000" />
       <workItem from="1585043000987" duration="65000" />
+      <workItem from="1585043531698" duration="246000" />
+      <workItem from="1585044078120" duration="24000" />
+      <workItem from="1585044192855" duration="91000" />
     </task>
     <servers />
   </component>
