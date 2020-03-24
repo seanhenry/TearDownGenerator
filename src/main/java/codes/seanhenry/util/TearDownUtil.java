@@ -1,6 +1,5 @@
 package codes.seanhenry.util;
 
-import com.intellij.psi.PsiElement;
 import com.intellij.psi.PsiNamedElement;
 import com.intellij.psi.PsiReference;
 import com.intellij.psi.util.PsiTreeUtil;
@@ -55,23 +54,9 @@ public class TearDownUtil {
 
   private static Set<String> getNilledPropertyNames(List<SwiftStatement> statements) {
     return statements.stream()
-      .filter(s -> s instanceof SwiftBinaryExpression)
-      .map(TearDownUtil::removeWhitespaceAndSelf)
-      .filter(TearDownUtil::isNilledStatement)
-      .map(TearDownUtil::removeNilledStatement)
+      .map(GetNilAssignmentVisitor::getName)
+      .filter(Objects::nonNull)
       .collect(Collectors.toSet());
-  }
-
-  private static String removeWhitespaceAndSelf(SwiftStatement statement) {
-    return statement.getText().replaceAll("\\s|self\\.", "");
-  }
-
-  private static boolean isNilledStatement(String statement) {
-    return statement.endsWith("=nil");
-  }
-
-  private static String removeNilledStatement(String statement) {
-    return statement.replaceAll("=nil", "");
   }
 
   public static SwiftFunctionDeclaration getTearDownMethod(SwiftClassDeclaration classDeclaration) {
