@@ -1,7 +1,5 @@
 package codes.seanhenry.inspections;
 
-import codes.seanhenry.analytics.GoogleAnalyticsTracker;
-import codes.seanhenry.analytics.Tracker;
 import codes.seanhenry.util.TearDownUtil;
 import com.intellij.codeInspection.LocalQuickFixOnPsiElement;
 import com.intellij.openapi.project.Project;
@@ -18,7 +16,6 @@ import java.util.stream.Collectors;
 
 public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
 
-  public static Tracker tracker = new GoogleAnalyticsTracker();
   private static final String NEWLINE = "\n";
   public static final String NAME = "Set properties to nil in tear down";
   private SwiftPsiElementFactory elementFactory;
@@ -42,7 +39,6 @@ public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
 
   @Override
   public void invoke(@NotNull Project project, @NotNull PsiFile file, @NotNull PsiElement element, @NotNull PsiElement element1) {
-    tracker.track("inspection", "teardown", "0");
     elementFactory = SwiftPsiElementFactory.getInstance(getClassDeclaration());
     List<String> writableNames = TearDownUtil.getWritableVariableNames(getClassDeclaration());
     SwiftFunctionDeclaration tearDownMethod = TearDownUtil.getTearDownMethod(getClassDeclaration());
@@ -108,7 +104,7 @@ public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
       return;
     }
     variableNames = TearDownUtil.removeExistingNilledVariables(variableNames, codeBlock);
-    addVariableNames(variableNames, codeBlock);
+    addVariableNames(variableNames, codeBlock, superExpression);
   }
 
   private static PsiElement findSuperExpression(SwiftCodeBlock codeBlock) {
@@ -126,10 +122,10 @@ public class TearDownInspectionQuickFix extends LocalQuickFixOnPsiElement {
     addStatementToCodeBlock(superExpression, codeBlock);
   }
 
-  private void addVariableNames(List<String> variableNames, SwiftCodeBlock codeBlock) {
+  private void addVariableNames(List<String> variableNames, SwiftCodeBlock codeBlock, PsiElement superExpression) {
     for (String name : variableNames) {
       SwiftExpression expression = elementFactory.createExpression(name + " = nil", null);
-      addStatementToCodeBlock(expression, codeBlock);
+      codeBlock.addStatementAfter(expression, superExpression.getPrevSibling());
     }
   }
 

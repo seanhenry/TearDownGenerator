@@ -1,8 +1,7 @@
 <idea-plugin>
   <id>codes.seanhenry.teardown</id>
   <name>Swift Test Tear Down Inspection for AppCode</name>
-  <version>4</version>
-  <vendor email="hello@seanhenry.codes" url="http://www.seanhenry.codes">Sean Henry</vendor>
+  <vendor email="sean@binarypulsar.org" url="http://www.seanhenry.codes">Sean Henry</vendor>
 
   <description><![CDATA[
   Inspects test classes for properties that are not set to nil in the tear down method
@@ -17,18 +16,11 @@
       </ul>
     ]]></description>
 
-  <change-notes><![CDATA[
-  Fixes breaking API change in AppCode 2020.1
-    ]]>
-  </change-notes>
-
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="201"/>
-
   <actions>
   </actions>
 
-  <depends>com.intellij.modules.appcode</depends>
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.swift.lang</depends>
 
   <project-components>
   </project-components>
